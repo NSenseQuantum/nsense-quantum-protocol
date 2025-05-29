@@ -4,10 +4,10 @@ import { Play, Rocket, ChevronDown } from "lucide-react";
 
 export function Hero() {
   const stats = [
-    { value: "50K+", label: "Feedback Processed" },
-    { value: "99.2%", label: "Sentiment Accuracy" },
-    { value: "80%", label: "Time Reduction" },
-    { value: "2000+", label: "Active Creators" },
+    { value: "100K+", label: "Years Travelled" },
+    { value: "69%", label: "Survival Rate" },
+    { value: "100+", label: "Journeys Available" },
+    { value: "5+", label: "Stars on TripAdvisor" },
   ];
 
   return (
@@ -64,9 +64,9 @@ export function Hero() {
           >
             <span className="text-quantum-cyan">Quantum-Powered</span>
             <br />
-            <span className="text-white">Feedback</span>
+            <span className="text-white">Temporal</span>
             <br />
-            <span className="text-quantum-magenta">Protocol</span>
+            <span className="text-quantum-magenta">Deconfluctuation</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-3xl mx-auto mb-8 leading-relaxed"
@@ -74,30 +74,24 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Harness the power of AI to collect, analyze, and organize customer feedback with
-            unprecedented precision. Transform raw sentiment into actionable insights.
+            Ever wanted to go to Ancient Rome? See the dinosaurs? Visit a futuristic colony on Mars? 
+            Our vast teams of MCPs are here to assist you on your temporal vacation, maybe you'll end up in a (quantum) entanglement ;)
           </motion.p>
         </motion.div>
 
         <motion.div
-          className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12"
+          className="flex justify-center items-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button className="bg-gradient-to-r from-quantum-cyan to-quantum-green text-space-dark px-8 py-4 text-lg font-bold hover:shadow-2xl hover:shadow-quantum-cyan/50 transition-all duration-300">
-              <Rocket className="mr-2" size={20} />
-              Start Free Trial
-            </Button>
-          </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               variant="outline"
               className="border-2 border-quantum-magenta text-quantum-magenta px-8 py-4 text-lg font-bold hover:bg-quantum-magenta hover:text-space-dark transition-all duration-300"
             >
               <Play className="mr-2" size={20} />
-              Watch Demo
+              Introductory Video
             </Button>
           </motion.div>
         </motion.div>
