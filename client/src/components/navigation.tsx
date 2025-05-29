@@ -12,6 +12,7 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/technology", label: "Technology" },
+    { href: "/book-trip", label: "Book a Trip" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -61,11 +62,13 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:block">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button variant="outline" className="border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold transition-all duration-300">
-                Book a Trip
-              </Button>
-            </motion.div>
+            <Link href="/book-trip">
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Button variant="outline" className="border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold transition-all duration-300">
+                  Book a Trip
+                </Button>
+              </motion.div>
+            </Link>
           </div>
 
           <div className="md:hidden">
@@ -103,9 +106,11 @@ export function Navigation() {
                   </a>
                 </Link>
               ))}
-              <Button variant="outline" className="w-full mt-4 border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold">
-                Book a Trip
-              </Button>
+              <Link href="/book-trip">
+                <Button variant="outline" className="w-full mt-4 border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold">
+                  Book a Trip
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}

@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Technology from "@/pages/technology";
+import BookTrip from "@/pages/book-trip";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/technology" component={Technology} />
+      <Route path="/book-trip" component={BookTrip} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
