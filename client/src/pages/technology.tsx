@@ -1,0 +1,312 @@
+import { motion } from "framer-motion";
+import { Cpu, Brain, Zap, Shield, Globe, Rocket } from "lucide-react";
+
+export default function Technology() {
+  const technologies = [
+    {
+      icon: Cpu,
+      title: "Quantum Processing Unit",
+      description: "Harness quantum superposition for parallel sentiment analysis across millions of feedback points simultaneously.",
+      features: ["Superposition computing", "Quantum entanglement", "10,000x faster processing"],
+      color: "quantum-cyan",
+    },
+    {
+      icon: Brain,
+      title: "Neural Language Models",
+      description: "Advanced transformer architectures trained on diverse feedback datasets for contextual understanding.",
+      features: ["GPT-4 integration", "Context awareness", "Multilingual support"],
+      color: "quantum-magenta",
+    },
+    {
+      icon: Zap,
+      title: "Distributed Computing",
+      description: "Global edge computing network ensures sub-second response times regardless of geographic location.",
+      features: ["Global edge nodes", "Real-time processing", "99.99% uptime"],
+      color: "quantum-green",
+    },
+    {
+      icon: Shield,
+      title: "Quantum Encryption",
+      description: "Immutable feedback storage with quantum-resistant encryption for maximum data integrity.",
+      features: ["Quantum-safe algorithms", "End-to-end encryption", "Zero-knowledge architecture"],
+      color: "neon-purple",
+    },
+  ];
+
+  const metrics = [
+    { label: "Processing Speed", value: "10ms", color: "quantum-cyan" },
+    { label: "Accuracy Rate", value: "99.7%", color: "quantum-magenta" },
+    { label: "Daily Analysis", value: "1M+", color: "quantum-green" },
+    { label: "Security Level", value: "256-bit", color: "neon-purple" },
+  ];
+
+  const architecture = [
+    {
+      layer: "User Interface",
+      description: "React-based quantum dashboard with real-time visualizations",
+      color: "quantum-cyan",
+    },
+    {
+      layer: "API Gateway",
+      description: "Quantum-secured REST and GraphQL endpoints",
+      color: "quantum-magenta",
+    },
+    {
+      layer: "Processing Engine",
+      description: "Quantum-classical hybrid computing for sentiment analysis",
+      color: "quantum-green",
+    },
+    {
+      layer: "Data Storage",
+      description: "Quantum-encrypted distributed database with GDPR compliance",
+      color: "neon-purple",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen pt-16">
+      {/* Hero Section */}
+      <section className="py-20 particle-bg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.h1
+            className="text-5xl md:text-7xl font-orbitron font-black mb-6"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="text-quantum-cyan neon-text">Quantum</span>{" "}
+            <span className="text-white">Technology</span>
+          </motion.h1>
+          <motion.p
+            className="text-xl md:text-2xl text-cool-gray max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Powered by cutting-edge quantum computing and advanced AI algorithms for unparalleled
+            performance in feedback analysis.
+          </motion.p>
+        </div>
+      </section>
+
+      {/* Technology Stack */}
+      <section className="py-20 bg-navy-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
+              <span className="text-quantum-magenta neon-text">Core Technologies</span>
+            </h2>
+            <p className="text-xl text-cool-gray max-w-3xl mx-auto">
+              The revolutionary technologies that power our quantum feedback analysis platform.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={tech.title}
+                className="glass-morphism rounded-2xl p-8 hover:border-quantum-cyan transition-all duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02 }}
+              >
+                <motion.div
+                  className={`w-16 h-16 bg-gradient-to-r from-${tech.color} to-blue-500 rounded-2xl flex items-center justify-center mb-6`}
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <tech.icon className="text-white text-2xl" size={28} />
+                </motion.div>
+                <h3 className={`text-2xl font-orbitron font-bold mb-4 text-${tech.color}`}>
+                  {tech.title}
+                </h3>
+                <p className="text-cool-gray mb-6">{tech.description}</p>
+                <div className="space-y-2">
+                  {tech.features.map((feature, featureIndex) => (
+                    <motion.div
+                      key={feature}
+                      className="flex items-center text-sm text-gray-400"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.2 + featureIndex * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="w-2 h-2 bg-quantum-green rounded-full mr-3"></div>
+                      {feature}
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Performance Metrics */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
+              <span className="text-quantum-green neon-text">Performance Metrics</span>
+            </h2>
+            <p className="text-xl text-cool-gray max-w-3xl mx-auto">
+              Quantum-powered performance that redefines what's possible in real-time analysis.
+            </p>
+          </motion.div>
+
+          <div className="holographic-border rounded-3xl p-1">
+            <div className="bg-navy-dark rounded-3xl p-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {metrics.map((metric, index) => (
+                  <motion.div
+                    key={metric.label}
+                    className="text-center"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <div className={`text-4xl font-orbitron font-bold text-${metric.color} neon-text mb-2`}>
+                      {metric.value}
+                    </div>
+                    <div className="text-cool-gray">{metric.label}</div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Architecture Diagram */}
+      <section className="py-20 bg-navy-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
+              <span className="text-neon-purple neon-text">System Architecture</span>
+            </h2>
+            <p className="text-xl text-cool-gray max-w-3xl mx-auto">
+              A quantum-classical hybrid architecture designed for scalability and security.
+            </p>
+          </motion.div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              {architecture.map((layer, index) => (
+                <motion.div
+                  key={layer.layer}
+                  className="glass-morphism rounded-xl p-6 hover:border-quantum-cyan transition-all duration-300"
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <div className="flex items-center space-x-6">
+                    <div className={`w-4 h-4 bg-${layer.color} rounded-full flex-shrink-0`}></div>
+                    <div className="flex-1">
+                      <h3 className={`text-xl font-orbitron font-bold text-${layer.color} mb-2`}>
+                        {layer.layer}
+                      </h3>
+                      <p className="text-cool-gray">{layer.description}</p>
+                    </div>
+                    <div className="text-2xl font-orbitron font-bold text-cool-gray">
+                      {String(index + 1).padStart(2, '0')}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl font-orbitron font-bold mb-6 text-quantum-cyan neon-text">
+                The Future is Quantum
+              </h2>
+              <div className="space-y-6 text-cool-gray text-lg">
+                <p>
+                  Our quantum computing approach doesn't just analyze feedback faster—it reveals
+                  patterns and insights that classical computing simply cannot detect.
+                </p>
+                <p>
+                  By leveraging quantum superposition and entanglement, we can process multiple
+                  sentiment scenarios simultaneously, giving you a multidimensional view of your
+                  audience's true feelings.
+                </p>
+                <p>
+                  This isn't just an incremental improvement—it's a fundamental shift in how
+                  feedback analysis works, opening up possibilities that were previously
+                  impossible.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              className="glass-morphism rounded-2xl p-8 text-center"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="w-32 h-32 bg-gradient-to-r from-quantum-cyan via-quantum-magenta to-quantum-green rounded-full mx-auto mb-6 flex items-center justify-center"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              >
+                <Rocket className="text-white text-4xl" />
+              </motion.div>
+              <h3 className="text-2xl font-orbitron font-bold text-quantum-magenta mb-4">
+                Quantum Advantage
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-cool-gray">Processing Speed</span>
+                  <span className="text-quantum-cyan font-bold">10,000x Faster</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-cool-gray">Pattern Recognition</span>
+                  <span className="text-quantum-magenta font-bold">99.97% Accuracy</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-cool-gray">Scalability</span>
+                  <span className="text-quantum-green font-bold">Infinite</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 180 100% 50%;
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+
+  /* Custom quantum colors */
+  --quantum-cyan: 180 100% 50%;
+  --quantum-magenta: 300 100% 50%;
+  --quantum-green: 120 100% 50%;
+  --space-dark: 240 71% 6%;
+  --navy-dark: 236 39% 18%;
+  --cool-gray: 218 11% 65%;
+  --light-cyan: 218 27% 88%;
+  --neon-orange: 18 95% 60%;
+  --neon-purple: 249 82% 57%;
+  --neon-amber: 43 96% 56%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 180 100% 50%;
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: hsl(var(--space-dark));
+    color: hsl(var(--light-cyan));
+  }
+}
+
+@layer components {
+  .font-orbitron {
+    font-family: 'Orbitron', monospace;
+  }
+  
+  .font-jetbrains {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .text-quantum-cyan {
+    color: hsl(var(--quantum-cyan));
+  }
+
+  .text-quantum-magenta {
+    color: hsl(var(--quantum-magenta));
+  }
+
+  .text-quantum-green {
+    color: hsl(var(--quantum-green));
+  }
+
+  .bg-quantum-cyan {
+    background-color: hsl(var(--quantum-cyan));
+  }
+
+  .bg-quantum-magenta {
+    background-color: hsl(var(--quantum-magenta));
+  }
+
+  .bg-quantum-green {
+    background-color: hsl(var(--quantum-green));
+  }
+
+  .bg-space-dark {
+    background-color: hsl(var(--space-dark));
+  }
+
+  .bg-navy-dark {
+    background-color: hsl(var(--navy-dark));
+  }
+
+  .text-cool-gray {
+    color: hsl(var(--cool-gray));
+  }
+
+  .text-light-cyan {
+    color: hsl(var(--light-cyan));
+  }
+
+  .text-neon-orange {
+    color: hsl(var(--neon-orange));
+  }
+
+  .text-neon-purple {
+    color: hsl(var(--neon-purple));
+  }
+
+  .text-neon-amber {
+    color: hsl(var(--neon-amber));
+  }
+
+  .bg-neon-orange {
+    background-color: hsl(var(--neon-orange));
+  }
+
+  .bg-neon-purple {
+    background-color: hsl(var(--neon-purple));
+  }
+
+  .bg-neon-amber {
+    background-color: hsl(var(--neon-amber));
+  }
+
+  .border-quantum-cyan {
+    border-color: hsl(var(--quantum-cyan));
+  }
+
+  .border-quantum-magenta {
+    border-color: hsl(var(--quantum-magenta));
+  }
+
+  .border-quantum-green {
+    border-color: hsl(var(--quantum-green));
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+  }
+
+  .glass-morphism {
+    background: rgba(22, 33, 62, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+  }
+
+  .holographic-border {
+    background: linear-gradient(45deg, hsl(var(--quantum-cyan)), hsl(var(--quantum-magenta)), hsl(var(--quantum-green)), hsl(var(--quantum-cyan)));
+    background-size: 400% 400%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .particle-bg {
+    background-image: 
+      radial-gradient(circle at 20% 20%, hsla(var(--quantum-cyan), 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsla(var(--quantum-magenta), 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsla(var(--quantum-green), 0.1) 0%, transparent 50%);
+  }
+
+  .bg-quantum {
+    background: radial-gradient(circle at 25% 25%, hsla(var(--quantum-cyan), 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, hsla(var(--quantum-magenta), 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, hsl(var(--space-dark)) 0%, hsl(var(--navy-dark)) 100%);
+  }
+
+  .scan-line {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scan-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--quantum-cyan)), transparent);
+    animation: scan 2s linear infinite;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .animate-scan {
+    animation: scan 2s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 20px hsla(var(--quantum-cyan), 0.5); 
+  }
+  to { 
+    box-shadow: 0 0 30px hsla(var(--quantum-cyan), 0.8); 
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes scan {
+  0% { 
+    transform: translateX(-100%); 
+  }
+  100% { 
+    transform: translateX(100%); 
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--space-dark));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--quantum-cyan));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--quantum-magenta));
+}
