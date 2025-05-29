@@ -73,7 +73,7 @@ export function DashboardPreview() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-magenta neon-text">Holographic</span> Dashboard
+            <span className="text-quantum-magenta">Holographic</span> Dashboard
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
             Experience the future of feedback management with our quantum-powered interface

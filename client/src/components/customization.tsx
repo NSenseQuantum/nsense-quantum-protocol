@@ -42,7 +42,7 @@ export function Customization() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-green neon-text">Brand</span> Customization
+            <span className="text-quantum-green">Brand</span> Customization
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
             Make it yours with powerful customization tools that adapt to your unique brand identity

@@ -62,11 +62,11 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-quantum-cyan neon-text">Quantum-Powered</span>
+            <span className="text-quantum-cyan">Quantum-Powered</span>
             <br />
             <span className="text-white">Feedback</span>
             <br />
-            <span className="text-quantum-magenta neon-text">Protocol</span>
+            <span className="text-quantum-magenta">Protocol</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-3xl mx-auto mb-8 leading-relaxed"
@@ -118,7 +118,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
               whileHover={{ scale: 1.1 }}
             >
-              <div className="text-3xl font-orbitron font-bold text-quantum-cyan neon-text mb-2">
+              <div className="text-3xl font-orbitron font-bold text-quantum-cyan mb-2">
                 {stat.value}
               </div>
               <div className="text-cool-gray text-sm">{stat.label}</div>

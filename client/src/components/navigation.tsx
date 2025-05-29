@@ -33,7 +33,7 @@ export function Navigation() {
                 <div className="w-10 h-10 bg-gradient-to-r from-quantum-cyan to-quantum-magenta rounded-lg flex items-center justify-center">
                   <div className="w-6 h-6 bg-white rounded-full opacity-90"></div>
                 </div>
-                <span className="text-2xl font-orbitron font-bold text-quantum-cyan neon-text">
+                <span className="text-2xl font-orbitron font-bold text-quantum-cyan">
                   N-Sense Quantum
                 </span>
               </motion.div>
@@ -62,8 +62,8 @@ export function Navigation() {
 
           <div className="hidden md:block">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-space-dark font-semibold hover:shadow-lg hover:shadow-quantum-cyan/50 transition-all duration-300 animate-glow">
-                Get Started
+              <Button variant="outline" className="border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold transition-all duration-300">
+                Book a Trip
               </Button>
             </motion.div>
           </div>
@@ -103,8 +103,8 @@ export function Navigation() {
                   </a>
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-space-dark font-semibold">
-                Get Started
+              <Button variant="outline" className="w-full mt-4 border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold">
+                Book a Trip
               </Button>
             </div>
           </motion.div>

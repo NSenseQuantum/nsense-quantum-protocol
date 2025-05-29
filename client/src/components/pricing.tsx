@@ -68,7 +68,7 @@ export function Pricing() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-neon-purple neon-text">Quantum</span> Pricing
+            <span className="text-neon-purple">Quantum</span> Pricing
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
             Choose the perfect plan to supercharge your feedback automation

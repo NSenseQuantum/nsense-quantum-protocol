@@ -88,7 +88,7 @@ export function Features() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-cyan neon-text">Quantum Features</span>
+            <span className="text-quantum-cyan">Quantum Features</span>
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
             Experience the next generation of feedback analysis with AI-powered sentiment detection and quantum-speed processing.
