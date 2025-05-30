@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Users, Target, Zap, Award } from "lucide-react";
+import chadChronoBroImage from "@assets/image_1748626524709.png";
 
 export default function About() {
   const values = [
@@ -53,6 +54,7 @@ export default function About() {
       role: "Founder & Chief Temporal Disruptor",
       description: "Discovered time travel while reheating chicken and rice. Currently managing multiple timelines while maintaining his gains.",
       color: "neon-purple",
+      image: chadChronoBroImage,
     },
     {
       name: "Temporal Jenny",
@@ -230,10 +232,18 @@ export default function About() {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center`}>
-                  <span className="text-2xl font-orbitron font-bold text-white">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                <div className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden`}>
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  ) : (
+                    <span className="text-2xl font-orbitron font-bold text-white">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-xl font-orbitron font-bold text-white mb-2">{member.name}</h3>
                 <div className={`text-${member.color} font-semibold mb-4`}>{member.role}</div>
