@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Users, Target, Zap, Award } from "lucide-react";
+import { Users, Target, Zap, Award, X } from "lucide-react";
+import { useState } from "react";
 import chadChronoBroImage from "@assets/image_1748626524709.png";
 import elonTuskImage from "@assets/image_1748627294323.png";
 import janetJannybotImage from "@assets/image_1748627604056.png";
@@ -8,6 +9,7 @@ import priyaRebootImage from "@assets/image_1748632536904.png";
 import tinaTockTockImage from "@assets/image_1748633386407.png";
 
 export default function About() {
+  const [selectedImage, setSelectedImage] = useState<{src: string, name: string} | null>(null);
   const values = [
     {
       icon: Target,
@@ -249,7 +251,15 @@ export default function About() {
                 whileTap={{ scale: 0.98 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
-                <div className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden group-hover:shadow-2xl group-hover:shadow-${member.color}/30 transition-all duration-500 group-hover:scale-110`}>
+                <div 
+                  className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden group-hover:shadow-2xl group-hover:shadow-${member.color}/30 transition-all duration-500 group-hover:scale-110 ${member.image ? 'cursor-pointer' : ''}`}
+                  onClick={(e) => {
+                    if (member.image) {
+                      e.stopPropagation();
+                      setSelectedImage({src: member.image, name: member.name});
+                    }
+                  }}
+                >
                   {member.image ? (
                     <img 
                       src={member.image} 
@@ -277,6 +287,40 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <motion.div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setSelectedImage(null)}
+        >
+          <motion.div
+            className="relative max-w-2xl max-h-[90vh] p-4"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-2 -right-2 z-10 bg-quantum-cyan text-black rounded-full p-2 hover:bg-white transition-colors duration-200"
+            >
+              <X size={20} />
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.name}
+              className="w-full h-full object-contain rounded-lg shadow-2xl"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-lg">
+              <h3 className="text-white font-orbitron font-bold text-xl">{selectedImage.name}</h3>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
     </div>
   );
 }
