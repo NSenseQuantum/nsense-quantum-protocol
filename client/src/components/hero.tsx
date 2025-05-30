@@ -4,10 +4,10 @@ import { Play, Rocket, ChevronDown } from "lucide-react";
 
 export function Hero() {
   const stats = [
-    { value: "100K+", label: "Years Travelled" },
+    { value: "100B+", label: "Years Travelled" },
     { value: "69%", label: "Survival Rate" },
     { value: "100+", label: "Journeys Available" },
-    { value: "5+", label: "Stars on TripAdvisor" },
+    { value: "4.20+", label: "Stars on TripAdvisor" },
   ];
 
   return (
