@@ -93,8 +93,8 @@ export function Customization() {
                 <p className="text-cool-gray mb-4">{protocol.description}</p>
                 <div className="space-y-2">
                   {protocol.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center">
-                      <div className={`w-2 h-2 bg-${protocol.color} rounded-full mr-3`}></div>
+                    <div key={featureIndex} className="flex items-start">
+                      <div className={`w-2 h-2 bg-${protocol.color} rounded-full mr-3 mt-2 flex-shrink-0`}></div>
                       <span className="text-sm text-gray-300">{feature}</span>
                     </div>
                   ))}
