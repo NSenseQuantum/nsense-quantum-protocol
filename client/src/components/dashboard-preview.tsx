@@ -77,11 +77,11 @@ export function DashboardPreview() {
       color: "neon-amber",
     },
     {
-      user: { name: "", initials: "" },
-      platform: "",
-      sentiment: "",
-      timestamp: "",
-      message: "",
+      user: { name: "Elon Musk", initials: "EM" },
+      platform: "Year 3000",
+      sentiment: "Overjoyed",
+      timestamp: "11d ago",
+      message: "Ha! And these fools believed I wasn't building rockets to become the emperor of the universe.",
       color: "quantum-cyan",
     },
   ];
