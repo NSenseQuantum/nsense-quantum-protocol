@@ -3,9 +3,7 @@ import { Features } from "@/components/features";
 import { DashboardPreview } from "@/components/dashboard-preview";
 import { Customization } from "@/components/customization";
 import { Pricing } from "@/components/pricing";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Rocket, Calendar } from "lucide-react";
+import { LegalDisclaimers } from "@/components/legal-disclaimers";
 
 
 
@@ -17,7 +15,7 @@ export default function Home() {
       <DashboardPreview />
       <Customization />
       <Pricing />
-
+      <LegalDisclaimers />
     </div>
   );
 }
