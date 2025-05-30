@@ -90,13 +90,7 @@ export function Pricing() {
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
             >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-quantum-magenta to-quantum-cyan px-4 py-1 rounded-full text-sm font-semibold text-space-dark">
-                    Most Popular
-                  </span>
-                </div>
-              )}
+
 
               <div className={plan.popular ? "bg-navy-dark rounded-2xl p-8" : ""}>
                 <div className="text-center mb-8">
