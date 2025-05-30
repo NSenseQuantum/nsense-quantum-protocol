@@ -32,6 +32,13 @@ export default function About() {
 
   const team = [
     {
+      name: "Dr. Chad Chrono-Bro",
+      role: "Founder & Chief Temporal Disruptor",
+      description: "Accidentally invented time travel whilst reheating chicken and rice. Believes the multiverse can be conquered with clean macros and shredded delts.",
+      color: "neon-purple",
+      image: chadChronoBroImage,
+    },
+    {
       name: "Dr. Alexandra Quantum",
       role: "CEO & Chief Temporal Architect",
       description: "Former quantum researcher at CERN who accidentally discovered time travel while heating leftover pizza. Now manages paradoxes across 47 timelines.",
@@ -48,13 +55,6 @@ export default function About() {
       role: "Head of Customer Experience",
       description: "Former time traveler with 10M+ temporal journeys who understands the existential dread of meeting yourself intimately.",
       color: "quantum-green",
-    },
-    {
-      name: "Dr. Chad Chrono-Bro",
-      role: "Founder & Chief Temporal Disruptor",
-      description: "Accidentally invented time travel whilst reheating chicken and rice. Believes the multiverse can be conquered with clean macros and shredded delts.",
-      color: "neon-purple",
-      image: chadChronoBroImage,
     },
     {
       name: "Temporal Jenny",
