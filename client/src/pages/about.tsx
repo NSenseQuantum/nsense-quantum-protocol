@@ -74,7 +74,7 @@ export default function About() {
     {
       name: "Tina TockTock",
       role: "Chief Chrono-Operational Architect",
-      description: "Architected the Temporal Layered Deployment Framework, a system so stable it's only crashed three entire realities. The only known person to successfully debut the social media bug of the 2020s. \"Time is just a product roadmap with fewer deliverables and more existential dread\"",
+      description: "Architected the Temporal Layered Deployment Framework, a system so stable it's only crashed three entire realities. The only known person to successfully debug the social media bug of the 2020s. \"Time is just a product roadmap with fewer deliverables and more existential dread\"",
       color: "quantum-cyan",
       image: tinaTockTockImage,
     },
