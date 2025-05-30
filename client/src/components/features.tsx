@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Brain, Heart, Palette, ServerCog, BarChart3, Plug } from "lucide-react";
+import { Brain, Book, Type, ServerCog, BarChart3, Plug } from "lucide-react";
 
 export function Features() {
   const features = [
     {
       icon: Brain,
       title: "Vast MCP Servers",
-      description: "Using our expansive teams of Multiple Chinese Persons incorporated with Federated Learning, we can pinpoint your arrival date within +/- 18s of the requested date",
+      description: "Using our expansive teams of Multiple Chinese Persons, back-end integrated with Federated Learning, we can pinpoint your arrival time within +/- 18s of the requested date",
       color: "quantum-cyan",
       gradient: "from-quantum-cyan to-blue-500",
       items: [
@@ -16,27 +16,27 @@ export function Features() {
       ],
     },
     {
-      icon: Heart,
-      title: "Real-time Dashboard",
-      description: "Monitor feedback streams in real-time with interactive visualizations and customizable metrics that update instantly.",
+      icon: Book,
+      title: "Decentralized Time Ledger",
+      description: "Immutably records all micro-events across all times, ensuring that no version of history can be tampered with",
       color: "quantum-magenta",
       gradient: "from-quantum-magenta to-purple-500",
       items: [
-        "Emotion detection",
-        "Context awareness",
-        "Multilingual support",
+        "Proof-of-Past™",
+        "Nonce-based Nostalgia Validation",
+        "Non-Fungible Timeline compatible",
       ],
     },
     {
-      icon: Palette,
-      title: "Brand Customization",
-      description: "Customize feedback collection templates with your brand colors, logos, and messaging to maintain consistent brand experience.",
+      icon: Type,
+      title: "Qubit-Powered NLP",
+      description: "Harness the illegitimate state of qubbits to understand, generate and emotionally disassociate with all languages across all realitittys",
       color: "quantum-green",
       gradient: "from-quantum-green to-emerald-500",
       items: [
-        "Custom templates",
-        "Brand color schemes",
-        "White-label options",
+        "Predictive Poetry",
+        "Paradox-Safe Auto Translation",
+        "Sometimes makes you larp in binary",
       ],
     },
     {
