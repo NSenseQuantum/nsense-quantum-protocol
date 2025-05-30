@@ -6,25 +6,25 @@ export default function About() {
     {
       icon: Target,
       title: "Mission",
-      description: "To revolutionize temporal exploration by providing safe, reliable, and ethically questionable time travel experiences across all known timelines.",
+      description: "To revolutionize temporal exploration by delivering ethically ambiguous, financially ruining and sexually flexible time travel experiences across all possible timelines.",
       color: "quantum-cyan",
     },
     {
       icon: Zap,
       title: "Innovation",
-      description: "We push the boundaries of causality itself, combining quantum mechanics with reckless ambition to deliver unprecedented chronological adventures.",
+      description: "We feebly disrupt causality by fusing blunt-edge quantum mechanics with untested hypotheses, meme-based algorithms and the occasional underpaid overworked asian engineer. No one has stopped us yet?",
       color: "quantum-magenta",
     },
     {
       icon: Users,
       title: "Community",
-      description: "We believe in connecting travelers across space-time, fostering relationships between past, present, and future versions of humanity.",
+      description: "We connect past, present and future humans - and sometimes non-humans - through shared experiences, technological marvel and extremely inappropriate dinner conversations with your ancestors (and/or descendents).",
       color: "quantum-green",
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for temporal perfection in every paradox, every timeline splice, and every customer's existential crisis.",
+      description: "We aim for mostly flawless temporal delivery with every journey, ensuring clients leave each timeline with more clarity, fewer limbs and only mild orgasmic confusion. We're ISO-certified for timeline integrity (pending approval from the P.E.N.I.S. council).",
       color: "neon-purple",
     },
   ];
