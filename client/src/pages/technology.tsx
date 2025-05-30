@@ -5,60 +5,60 @@ export default function Technology() {
   const technologies = [
     {
       icon: Cpu,
-      title: "Quantum Processing Unit",
-      description: "Harness quantum superposition for parallel sentiment analysis across millions of feedback points simultaneously.",
-      features: ["Superposition computing", "Quantum entanglement", "10,000x faster processing"],
+      title: "Quantum Temporal Engine",
+      description: "Harness quantum superposition for parallel timeline navigation across millions of temporal coordinates simultaneously.",
+      features: ["Multiverse computing", "Chronon entanglement", "10,000x faster time travel"],
       color: "quantum-cyan",
     },
     {
       icon: Brain,
-      title: "Neural Language Models",
-      description: "Advanced transformer architectures trained on diverse feedback datasets for contextual understanding.",
-      features: ["GPT-4 integration", "Context awareness", "Multilingual support"],
+      title: "Paradox Prevention AI",
+      description: "Advanced neural networks trained on temporal mechanics to prevent customers from accidentally erasing themselves from existence.",
+      features: ["Grandfather Clause detection", "Timeline stability monitoring", "Existential crisis support"],
       color: "quantum-magenta",
     },
     {
       icon: Zap,
-      title: "Distributed Computing",
-      description: "Global edge computing network ensures sub-second response times regardless of geographic location.",
-      features: ["Global edge nodes", "Real-time processing", "99.99% uptime"],
+      title: "Distributed Chronology",
+      description: "Multidimensional time network ensures sub-nanosecond temporal accuracy regardless of which century you're visiting.",
+      features: ["47 timeline nodes", "Real-time paradox processing", "99.89% temporal integrity"],
       color: "quantum-green",
     },
     {
       icon: Shield,
-      title: "Quantum Encryption",
-      description: "Immutable feedback storage with quantum-resistant encryption for maximum data integrity.",
-      features: ["Quantum-safe algorithms", "End-to-end encryption", "Zero-knowledge architecture"],
+      title: "Temporal Encryption",
+      description: "Immutable timeline storage with causality-resistant encryption for maximum historical integrity and minimal butterfly effects.",
+      features: ["Paradox-proof algorithms", "End-to-end chronological encryption", "Zero-knowledge temporal architecture"],
       color: "neon-purple",
     },
   ];
 
   const metrics = [
-    { label: "Processing Speed", value: "10ms", color: "quantum-cyan" },
-    { label: "Accuracy Rate", value: "99.7%", color: "quantum-magenta" },
-    { label: "Daily Analysis", value: "1M+", color: "quantum-green" },
-    { label: "Security Level", value: "256-bit", color: "neon-purple" },
+    { label: "Temporal Jump Speed", value: "0.3s", color: "quantum-cyan" },
+    { label: "Timeline Accuracy", value: "89.7%", color: "quantum-magenta" },
+    { label: "Daily Time Travels", value: "1M+", color: "quantum-green" },
+    { label: "Paradox Prevention", value: "99.2%", color: "neon-purple" },
   ];
 
   const architecture = [
     {
-      layer: "User Interface",
-      description: "React-based quantum dashboard with real-time visualizations",
+      layer: "Temporal Interface",
+      description: "Quantum-based chronology dashboard with real-time timeline visualizations",
       color: "quantum-cyan",
     },
     {
-      layer: "API Gateway",
-      description: "Quantum-secured REST and GraphQL endpoints",
+      layer: "Paradox Gateway",
+      description: "Quantum-secured temporal portals and chronological endpoints",
       color: "quantum-magenta",
     },
     {
-      layer: "Processing Engine",
-      description: "Quantum-classical hybrid computing for sentiment analysis",
+      layer: "Time Processing Engine",
+      description: "Quantum-classical hybrid computing for temporal displacement calculations",
       color: "quantum-green",
     },
     {
-      layer: "Data Storage",
-      description: "Quantum-encrypted distributed database with GDPR compliance",
+      layer: "Timeline Storage",
+      description: "Quantum-encrypted distributed temporal database with causality compliance",
       color: "neon-purple",
     },
   ];
@@ -83,8 +83,8 @@ export default function Technology() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Powered by cutting-edge quantum computing and advanced AI algorithms for unparalleled
-            performance in feedback analysis.
+            Powered by cutting-edge quantum computing and advanced temporal algorithms for unparalleled
+            performance in chronological displacement across multiple dimensions.
           </motion.p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function Technology() {
               <span className="text-quantum-magenta neon-text">Core Technologies</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              The revolutionary technologies that power our quantum feedback analysis platform.
+              The revolutionary technologies that power our quantum temporal displacement platform.
             </p>
           </motion.div>
 
@@ -164,7 +164,7 @@ export default function Technology() {
               <span className="text-quantum-green neon-text">Performance Metrics</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              Quantum-powered performance that redefines what's possible in real-time analysis.
+              Quantum-powered performance that redefines what's possible in real-time temporal navigation.
             </p>
           </motion.div>
 

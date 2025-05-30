@@ -6,25 +6,25 @@ export default function About() {
     {
       icon: Target,
       title: "Mission",
-      description: "To revolutionize how content creators understand and act on customer feedback through quantum-powered AI technology.",
+      description: "To revolutionize temporal exploration by providing safe, reliable, and ethically questionable time travel experiences across all known timelines.",
       color: "quantum-cyan",
     },
     {
       icon: Zap,
       title: "Innovation",
-      description: "We push the boundaries of what's possible, combining quantum computing with advanced AI to deliver unprecedented insights.",
+      description: "We push the boundaries of causality itself, combining quantum mechanics with reckless ambition to deliver unprecedented chronological adventures.",
       color: "quantum-magenta",
     },
     {
       icon: Users,
       title: "Community",
-      description: "We believe in empowering creators to build stronger connections with their audiences through meaningful feedback analysis.",
+      description: "We believe in connecting travelers across space-time, fostering relationships between past, present, and future versions of humanity.",
       color: "quantum-green",
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for perfection in every algorithm, every interface, and every customer interaction.",
+      description: "We strive for temporal perfection in every paradox, every timeline splice, and every customer's existential crisis.",
       color: "neon-purple",
     },
   ];
@@ -32,20 +32,20 @@ export default function About() {
   const team = [
     {
       name: "Dr. Alexandra Quantum",
-      role: "CEO & Quantum Architect",
-      description: "Former quantum researcher at CERN with 15+ years in quantum computing applications.",
+      role: "CEO & Chief Temporal Architect",
+      description: "Former quantum researcher at CERN who accidentally discovered time travel while heating leftover pizza. Now manages paradoxes across 47 timelines.",
       color: "quantum-cyan",
     },
     {
-      name: "Marcus Neural",
-      role: "CTO & AI Lead",
-      description: "Ex-Google AI researcher specializing in natural language processing and sentiment analysis.",
+      name: "Marcus Chronos",
+      role: "CTO & Timeline Safety Officer",
+      description: "Ex-NASA physicist specializing in temporal mechanics and preventing customers from becoming their own grandfather.",
       color: "quantum-magenta",
     },
     {
-      name: "Sarah Creator",
-      role: "Head of Product",
-      description: "Former content creator with 10M+ followers who understands the creator economy intimately.",
+      name: "Sarah Paradox",
+      role: "Head of Customer Experience",
+      description: "Former time traveler with 10M+ temporal journeys who understands the existential dread of meeting yourself intimately.",
       color: "quantum-green",
     },
   ];
@@ -70,8 +70,8 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            We're pioneering the future of feedback analysis, where quantum computing meets artificial
-            intelligence to transform how creators understand their audiences.
+            We're pioneering the future of temporal displacement, where quantum computing meets chronological
+            engineering to transform how travelers experience history across all dimensions.
           </motion.p>
         </div>
       </section>
@@ -91,19 +91,19 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">
                 <p>
-                  Born from the frustration of manually analyzing thousands of feedback comments,
-                  N-Sense Quantum Protocol emerged when our founder, Dr. Alexandra Quantum, realized
-                  that quantum computing could revolutionize sentiment analysis.
+                  Born from the frustration of linear time constraints and one-dimensional existence,
+                  N-Sense Quantum Protocol emerged when our founder, Dr. Alexandra Quantum, accidentally
+                  discovered time travel while trying to fix her microwave in 2019.
                 </p>
                 <p>
-                  What started as a research project at a quantum computing lab has evolved into the
-                  world's first quantum-powered feedback analysis platform, serving over 2,000
-                  content creators globally.
+                  What started as a kitchen mishap has evolved into the multiverse's premier
+                  temporal transportation service, serving over 2,000 time travelers across
+                  47 different timelines and counting.
                 </p>
                 <p>
-                  Today, we process millions of feedback points daily, helping creators make
-                  data-driven decisions that strengthen their connection with audiences and drive
-                  meaningful engagement.
+                  Today, we facilitate millions of chronological journeys daily, helping travelers make
+                  historically significant decisions, meet their ancestors, and occasionally prevent
+                  or cause major world events.
                 </p>
               </div>
             </motion.div>
@@ -115,24 +115,24 @@ export default function About() {
               viewport={{ once: true }}
             >
               <div className="bg-gradient-to-r from-quantum-cyan/20 to-quantum-magenta/20 rounded-xl p-8 text-center">
-                <div className="text-4xl font-orbitron font-bold text-quantum-cyan mb-2">2024</div>
-                <div className="text-cool-gray mb-4">Founded</div>
+                <div className="text-4xl font-orbitron font-bold text-quantum-cyan mb-2">2019</div>
+                <div className="text-cool-gray mb-4">Accidentally Founded</div>
                 <div className="grid grid-cols-2 gap-6 mt-8">
                   <div>
                     <div className="text-2xl font-orbitron font-bold text-quantum-magenta">50M+</div>
-                    <div className="text-sm text-cool-gray">Feedback Analyzed</div>
+                    <div className="text-sm text-cool-gray">Time Jumps Completed</div>
                   </div>
                   <div>
                     <div className="text-2xl font-orbitron font-bold text-quantum-green">2000+</div>
-                    <div className="text-sm text-cool-gray">Active Creators</div>
+                    <div className="text-sm text-cool-gray">Active Time Travelers</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-neon-purple">99.7%</div>
-                    <div className="text-sm text-cool-gray">Accuracy Rate</div>
+                    <div className="text-2xl font-orbitron font-bold text-neon-purple">89.7%</div>
+                    <div className="text-sm text-cool-gray">Temporal Accuracy</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-neon-amber">24/7</div>
-                    <div className="text-sm text-cool-gray">Global Coverage</div>
+                    <div className="text-2xl font-orbitron font-bold text-neon-amber">47</div>
+                    <div className="text-sm text-cool-gray">Timeline Coverage</div>
                   </div>
                 </div>
               </div>
