@@ -42,7 +42,7 @@ export default function About() {
     {
       name: "Elon Tusk",
       role: "Cryptographic Time-Node Specialist",
-      description: "Runs a side hustle breeding pre-historic pigs. Not allowed to be left alone with miniature rockets.. for reasons we won't mention here",
+      description: "Runs a side hustle breeding pre-historic pigs. Not allowed to be left alone with miniature rockets.. for reasons we won't mention here.",
       color: "quantum-cyan",
       image: elonTuskImage,
     },
