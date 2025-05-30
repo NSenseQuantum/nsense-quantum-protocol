@@ -45,12 +45,12 @@ export function DashboardPreview() {
       color: "quantum-green",
     },
     {
-      user: { name: "", initials: "" },
-      platform: "",
-      sentiment: "",
-      timestamp: "",
-      message: "",
-      color: "quantum-cyan",
+      user: { name: "Graham Hancock", initials: "GH" },
+      platform: "Ancient Egypt",
+      sentiment: "Pissed Off",
+      timestamp: "1y 14d ago",
+      message: "Turns out they did build the blasted things after all.",
+      color: "red-500",
     },
     {
       user: { name: "", initials: "" },
