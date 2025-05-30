@@ -69,11 +69,11 @@ export function DashboardPreview() {
       color: "quantum-magenta",
     },
     {
-      user: { name: "", initials: "" },
-      platform: "",
-      sentiment: "",
-      timestamp: "",
-      message: "",
+      user: { name: "Anatoly Yakovenko", initials: "AY" },
+      platform: "Meet the Stoics",
+      sentiment: "Disagreeable",
+      timestamp: "10blocks ago",
+      message: "Seneca is an eth maxi. Aurelius couldn't understand that revenue was the core of his empire, not Roman morals. Next time i'll just have a coffee with Mert.",
       color: "neon-amber",
     },
     {
