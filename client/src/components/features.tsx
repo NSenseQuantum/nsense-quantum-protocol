@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, Book, Type, ServerCog, BarChart3, Plug } from "lucide-react";
+import { Brain, Book, Type, ServerCog, Building, Plug } from "lucide-react";
 
 export function Features() {
   const features = [
@@ -41,38 +41,38 @@ export function Features() {
     },
     {
       icon: ServerCog,
-      title: "Smart Automation",
-      description: "Set up intelligent workflows that automatically categorize, respond, and escalate feedback based on your custom rules.",
+      title: "Warp-Speed LLM",
+      description: "Our patented Loose Latency Memories™ allows for full immersion into the timeline due to spatially replicated individual personalities using a complex mixture of interpretability overlays and adamantite.",
       color: "neon-purple",
       gradient: "from-neon-purple to-violet-500",
       items: [
-        "Auto-categorization",
-        "Smart responses",
-        "Priority escalation",
+        "Constant RLHF adaptation constantly improves the journey",
+        "Some Cavewomen may act like Trump",
+        "Side effects may include Schizophrenia and plausible deniability",
       ],
     },
     {
-      icon: BarChart3,
-      title: "Quantum Analytics",
-      description: "Real-time insights and predictive analytics help you understand trends and make data-driven content decisions.",
+      icon: Building,
+      title: "Robust Architecture",
+      description: "Built-to-last framework capable of load-bearing across all timelines and eliptical occurences. Inspired by ancient and future monolithic organic adaptogens.",
       color: "neon-amber",
       gradient: "from-neon-amber to-orange-500",
       items: [
-        "Real-time metrics",
-        "Predictive insights",
-        "Custom reports",
+        "Load-bearing Metaphors™",
+        "Built in stone, Rust decays",
+        "Quantum Bunkers fully kitted with algorithmic optimised decapitation systems",
       ],
     },
     {
       icon: Plug,
-      title: "Integration Hub",
-      description: "Connect with 100+ platforms including YouTube, Instagram, TikTok, Twitter, Discord, and all major content platforms.",
+      title: "Round the Clock API",
+      description: "Our Atmospheric Polluton Inversion centres ensure that your vacation is guilt free. Using state of the art digital organics we protect the universe from any contamination you may cause.",
       color: "blue-400",
       gradient: "from-blue-400 to-indigo-500",
       items: [
-        "100+ integrations",
-        "API access",
-        "Webhook support",
+        "All payments processed by ethically sourced bacteria",
+        "Carbon footprint roll-backs",
+        "Fully compliant with ISO-42069",
       ],
     },
   ];
