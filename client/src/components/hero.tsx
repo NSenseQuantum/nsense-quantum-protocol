@@ -6,7 +6,7 @@ export function Hero() {
   const stats = [
     { value: "100B+", label: "Years Travelled" },
     { value: "69%", label: "Survival Rate" },
-    { value: "100+", label: "Journeys Available" },
+    { value: "73+", label: "Journeys Available" },
     { value: "4.20+", label: "Stars on TripAdvisor" },
   ];
 
