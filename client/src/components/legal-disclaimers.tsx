@@ -12,19 +12,19 @@ export function LegalDisclaimers() {
     {
       icon: Scale,
       title: "Historical Accuracy Notice",
-      content: "While we strive for 99.7% historical accuracy, some timelines may vary. Dinosaurs may appear larger than expected. Medieval hygiene standards cannot be improved by modern soap.",
+      content: "N-Sense Quantum ensures an 89.7% historically aligned accuracy guarantee however some timelines may vary based on Wikipedia data and the unwavering confidence of our intern Murad. Dinosaurs may appear larger, sassier or more British than expected. Certain Pharaohs may speak exclusively in TikTok brainrot memes. Medieval hygiene standards cannot be improved by modern soap. Prominent historical figures may not reflect modern values or be emotionally available.",
       color: "quantum-cyan",
     },
     {
       icon: Clock,
       title: "Grandfather Clause Disclaimer",
-      content: "Accidentally preventing your own birth voids all warranties. Please refrain from making significant changes to your family tree. We are not responsible for paradox loops lasting longer than 72 hours.",
+      content: "Accidentally preventing your own birth voids all warranties, intentionally preventing it can incur legal issues upon returning unless you departed from our Zurich terminal. Please avoid such acts such as flirting with your own grandmother, naming your child after yourself before being born or explaining DogeCoin to your thrice-great grandfather and thus destabilising the market for years to come. Note: Paradox loops exceeding 48 hours will incur a storage fee.",
       color: "quantum-green",
     },
     {
       icon: Zap,
       title: "Quantum Entanglement Warning",
-      content: "Prolonged exposure to temporal fields may result in quantum entanglement with historical figures. We are not liable for romantic attachments to Julius Caesar or Tesla's obsession with pigeons.",
+      content: "Users may experience quantum emotional bonding with historical entities, mythological figures or sentient household pets. We are not liable for any romantic attachments to Genghis Khan or Tesla's obsession with cats that pop. It is your own legal responsibility if Cleopatra tries to trademark your likeness or if Van Gogh discovers the fine art of the instagram selfie.",
       color: "neon-amber",
     },
   ];
