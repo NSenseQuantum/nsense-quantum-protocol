@@ -70,8 +70,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            We're pioneering the future of temporal displacement, where quantum computing meets chronological
-            engineering to transform how travelers experience history across all dimensions.
+            Pioneering the future of temporal displacement, where Quantum Computing meets Multiple Chinese Persons meets Chronological Engineering meets Artificial Guerilla Intelligence. Transforming how travellers experience history across all dimensions.
           </motion.p>
         </div>
       </section>
@@ -91,19 +90,13 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">
                 <p>
-                  Born from the frustration of linear time constraints and one-dimensional existence,
-                  N-Sense Quantum Protocol emerged when our founder, Dr. Alexandra Quantum, accidentally
-                  discovered time travel while trying to fix her microwave in 2019.
+                  Born from the frustration of boring memes, linear time constraints and one-dimensional exercise, N-Sense Quantum emerged when our founder, Dr. Chad Chrono-Bro, accidentally discovered time travel whilst trying to reheat his chicken and rice in the microwave. Unknown to Chad, his microwave had become spacially entangled with a rogue particle accelerator, two cans of Monster Energy and a bluetooth-enabled smart protein shaker. Upon pressing start, spacetime folded in on itself.
                 </p>
                 <p>
-                  What started as a kitchen mishap has evolved into the multiverse's premier
-                  temporal transportation service, serving over 2,000 time travelers across
-                  47 different timelines and counting.
+                  2 minutes later, Chad's meal was steaming hot. And he was inexplicably standing in the middle of Ancient Greece, shirtless and holding a fork made from an undeservedly sacrificed squirrel.
                 </p>
                 <p>
-                  Today, we facilitate millions of chronological journeys daily, helping travelers make
-                  historically significant decisions, meet their ancestors, and occasionally prevent
-                  or cause major world events.
+                  Today, N-Sense Quantum operates across 47 certified timelines (and 11 uncertified ones), offering bespoke, luxury paradox packages, AI-enhanced flashbacks and the industry's only time-travel-safe pre-workout formula.
                 </p>
               </div>
             </motion.div>
