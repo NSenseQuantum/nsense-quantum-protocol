@@ -6,7 +6,7 @@ export function Features() {
     {
       icon: Brain,
       title: "Vast MCP Servers",
-      description: "Using our expansive teams of Multiple Chinese Persons, back-end integrated with Federated Learning, we can pinpoint your arrival time within +/- 18s of the requested date",
+      description: "Using our expansive teams of Multiple Chinese Persons, back-end integrated with Federated Learning, we can pinpoint your arrival time within +/- 18s of the requested date.",
       color: "quantum-cyan",
       gradient: "from-quantum-cyan to-blue-500",
       items: [
@@ -18,7 +18,7 @@ export function Features() {
     {
       icon: Book,
       title: "Decentralized Time Ledger",
-      description: "Immutably records all micro-events across all times, ensuring that no version of history can be tampered with",
+      description: "Immutably records all micro-events across all times, ensuring that no version of history can be tampered with.",
       color: "quantum-magenta",
       gradient: "from-quantum-magenta to-purple-500",
       items: [
@@ -30,7 +30,7 @@ export function Features() {
     {
       icon: Type,
       title: "Qubit-Powered NLP",
-      description: "Harness the illegitimate state of qubbits to understand, generate and emotionally disassociate with all languages across all realitittys",
+      description: "Harness the illegitimate state of qubits to understand, generate and emotionally disassociate with all languages across all realitittys.",
       color: "quantum-green",
       gradient: "from-quantum-green to-emerald-500",
       items: [
