@@ -6,7 +6,7 @@ export function LegalDisclaimers() {
     {
       icon: AlertTriangle,
       title: "Temporal Liability Waiver",
-      content: "By initiating a chrono-departure with N-Sense Quantum, the user (\"You\") agrees to absolve all branches, subsidiaries, and shadow clones of N-Sense of any responsibility for: Causality disruptions, recursive anomalies, accidental necromancy and existential echo syndrome. Side effects may include involuntary Latin fluency, sudden transformation into your own evil twin, mild Spongebob based hallucinations and the occasional mildly permanent bout of schizophrenic autism.",
+      content: "By initiating a chrono-departure with N-Sense Quantum, the user (\"You\") agrees to absolve all branches, subsidiaries, and shadow clones of N-Sense of any responsibility for: Causality disruptions, recursive anomalies, accidental necromancy and existential echo syndrome. Side effects may include involuntary Latin fluency, sudden transformation into your own evil twin, mild Spongebob based hallucinations and the occasional permanent bout of schizophrenic autism.",
       color: "quantum-magenta",
     },
     {
