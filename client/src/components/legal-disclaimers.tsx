@@ -6,7 +6,7 @@ export function LegalDisclaimers() {
     {
       icon: AlertTriangle,
       title: "Temporal Liability Waiver",
-      content: "N-Sense Quantum Protocol is not responsible for any paradoxes, timeline alterations, or butterfly effects caused by your actions. Side effects may include: existential dread, temporal displacement syndrome, and occasional non-existence.",
+      content: "By initiating a chrono-departure with N-Sense Quantum, the user (\"You\") agrees to absolve all branches, subsidiaries, and shadow clones of N-Sense of any responsibility for: Causality disruptions, recursive anomalies, accidental necromancy and existential echo syndrome. Side effects may include involuntary Latin fluency, sudden transformation into your own evil twin, mild Spongebob based hallucinations and the occasional mildly permanent bout of schizophrenic autism.",
       color: "quantum-magenta",
     },
     {
@@ -43,7 +43,7 @@ export function LegalDisclaimers() {
             <span className="text-red-400">Legal</span> Disclaimers
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-            Important temporal travel notices and liability waivers. Please read carefully before embarking on your quantum journey.
+            Important notices for the temporally bi-curious and/or legally vulnerable.
           </p>
         </motion.div>
 
