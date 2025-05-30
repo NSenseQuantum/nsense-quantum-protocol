@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Coffee, AlertTriangle, Users, Clock, Zap, FileCheck, Shield } from "lucide-react";
+import { Coffee, AlertTriangle, Users, Clock, Zap, Search, Shield } from "lucide-react";
 
 export function Customization() {
   const safetyProtocols = [
@@ -41,18 +41,18 @@ export function Customization() {
   const equipmentSpecs = [
     {
       icon: Clock,
-      name: "Temporal Anchor",
-      specs: "Quantum-locked return beacon with 99.99% accuracy",
+      name: "Temporal Anchor Pro",
+      specs: "Quantum engaged return beacon with 77% accuracy, also functions as an awkward small talk terminator",
     },
     {
       icon: Zap,
-      name: "Neural Translator",
-      specs: "Universal language processor with 47,000+ dialects",
+      name: "NLP Headset v12.1.1",
+      specs: "Real-time language processing across 47,000 dialects, 3 extinct grunts and one slightly telepathic emoji-based language.",
     },
     {
-      icon: FileCheck,
+      icon: Search,
       name: "Identity Modifier",
-      specs: "Holographic disguise with DNA-level authenticity",
+      specs: "Now featuring Adaptive Beard Simulation™ and Hat Protocols for those times when you absolutely must be, wif hat.",
     },
   ];
 
@@ -113,7 +113,7 @@ export function Customization() {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-orbitron font-bold text-white mb-2">Quantum Equipment</h3>
-              <p className="text-cool-gray">Standard gear included with every temporal journey</p>
+              <p className="text-cool-gray">Every journey comes with industry leading, relatively safe and borderline sentient gear - calibrated within the most recent century.</p>
             </motion.div>
 
             {/* Equipment Showcase Window */}
@@ -164,7 +164,7 @@ export function Customization() {
                     <div>
                       <h4 className="text-quantum-green font-orbitron font-bold">Certified Safe</h4>
                       <p className="text-sm text-cool-gray">
-                        Approved by the Temporal Regulations Authority (TRA) and the Quantum Safety Institute
+                        Approved by the Sanctioned Office of Linearity, the Anachronism Neutralization Authority and Gake from accounts who's been to 1347 and back (twice).
                       </p>
                     </div>
                   </div>
