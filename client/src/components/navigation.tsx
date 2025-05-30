@@ -61,15 +61,7 @@ export function Navigation() {
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <Link href="/book-trip">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button variant="outline" className="border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold transition-all duration-300">
-                  Book a Trip
-                </Button>
-              </motion.div>
-            </Link>
-          </div>
+
 
           <div className="md:hidden">
             <Button
@@ -106,11 +98,7 @@ export function Navigation() {
                   </a>
                 </Link>
               ))}
-              <Link href="/book-trip">
-                <Button variant="outline" className="w-full mt-4 border-quantum-cyan text-quantum-cyan hover:bg-quantum-cyan hover:text-space-dark font-semibold">
-                  Book a Trip
-                </Button>
-              </Link>
+
             </div>
           </motion.div>
         )}
