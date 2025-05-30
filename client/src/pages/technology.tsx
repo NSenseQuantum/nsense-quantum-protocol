@@ -181,7 +181,7 @@ export default function Technology() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.1 }}
                   >
-                    <div className={`text-4xl font-orbitron font-bold text-${metric.color} neon-text mb-2`}>
+                    <div className={`text-4xl font-orbitron font-bold text-${metric.color} mb-2`}>
                       {metric.value}
                     </div>
                     <div className="text-cool-gray">{metric.label}</div>
