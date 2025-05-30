@@ -108,23 +108,23 @@ export default function About() {
               viewport={{ once: true }}
             >
               <div className="bg-gradient-to-r from-quantum-cyan/20 to-quantum-magenta/20 rounded-xl p-8 text-center">
-                <div className="text-4xl font-orbitron font-bold text-quantum-cyan mb-2">2019</div>
+                <div className="text-4xl font-orbitron font-bold text-quantum-cyan mb-2">2011</div>
                 <div className="text-cool-gray mb-4">Accidentally Founded</div>
                 <div className="grid grid-cols-2 gap-6 mt-8">
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-quantum-magenta">50M+</div>
+                    <div className="text-2xl font-orbitron font-bold text-quantum-magenta">147M+</div>
                     <div className="text-sm text-cool-gray">Time Jumps Completed</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-quantum-green">2000+</div>
+                    <div className="text-2xl font-orbitron font-bold text-quantum-green">20M+</div>
                     <div className="text-sm text-cool-gray">Active Time Travelers</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-neon-purple">89.7%</div>
+                    <div className="text-2xl font-orbitron font-bold text-neon-purple">79.7%</div>
                     <div className="text-sm text-cool-gray">Temporal Accuracy</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-orbitron font-bold text-neon-amber">47</div>
+                    <div className="text-2xl font-orbitron font-bold text-neon-amber">47 (+11)</div>
                     <div className="text-sm text-cool-gray">Timeline Coverage</div>
                   </div>
                 </div>
