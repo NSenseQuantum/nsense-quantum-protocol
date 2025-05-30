@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
-import { Shield, AlertTriangle, Users, Clock, Zap, FileCheck } from "lucide-react";
+import { Coffee, AlertTriangle, Users, Clock, Zap, FileCheck, Shield } from "lucide-react";
 
 export function Customization() {
   const safetyProtocols = [
     {
-      icon: Shield,
-      title: "Temporal Shielding",
-      description: "Military-grade quantum barriers protect travelers from paradox cascade failures and timeline corruption.",
+      icon: Coffee,
+      title: "Quantum Etiquette",
+      description: "To avoid extinction level events, all correct timeline etiquette and procedures must be adhered to at all times.",
       features: [
-        "99.97% paradox prevention rate",
-        "Auto-eject on timeline instability",
-        "Quantum bubble encapsulation",
+        "Avoid starting cults, it's not worth the attention",
+        "No, Jesus won't come on your podcast",
+        "Cavemen do not make good DAO members",
       ],
       color: "quantum-cyan",
     },
@@ -67,10 +67,10 @@ export function Customization() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-green">Temporal Safety</span> Protocols
+            <span className="text-quantum-green">Temporal Integrity</span> and Travel Standards
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-            Your safety across all timelines is our quantum priority. Advanced protection systems ensure secure temporal travel.
+            Please read carefully. Ignorance of these rules may result in time paradoxes, spontaneous moustache growth or an uncancellable marriage to your cousin.
           </p>
         </motion.div>
 
