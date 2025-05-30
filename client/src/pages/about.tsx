@@ -5,6 +5,7 @@ import elonTuskImage from "@assets/image_1748627294323.png";
 import janetJannybotImage from "@assets/image_1748627604056.png";
 import lilSemImage from "@assets/image_1748631800469.png";
 import priyaRebootImage from "@assets/image_1748632536904.png";
+import tinaTockTockImage from "@assets/image_1748633386407.png";
 
 export default function About() {
   const values = [
@@ -71,10 +72,11 @@ export default function About() {
       image: priyaRebootImage,
     },
     {
-      name: "Quantum Kevin",
-      role: "Director of Timeline Compliance",
-      description: "Ensures all time travel operations meet P.E.N.I.S. council standards and maintains our 79.7% accuracy rating.",
+      name: "Tina TockTock",
+      role: "Chief Chrono-Operational Architect",
+      description: "Architected the Temporal Layered Deployment Framework, a system so stable it's only crashed three entire realities. The only known person to successfully debut the social media bug of the 2020s. \"Time is just a product roadmap with fewer deliverables and more existential dread\"",
       color: "quantum-cyan",
+      image: tinaTockTockImage,
     },
   ];
 
