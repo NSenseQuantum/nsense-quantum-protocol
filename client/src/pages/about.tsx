@@ -148,7 +148,7 @@ export default function About() {
               <span className="text-quantum-green">Our Values</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              The principles that guide everything we do, from product development to customer success.
+              The principles that guide us through every quantum leap, poorly judged timeline and customer meltdown. Forever guiding us to <span className="line-through">maximum profit</span> customer satisfaction.
             </p>
           </motion.div>
 
