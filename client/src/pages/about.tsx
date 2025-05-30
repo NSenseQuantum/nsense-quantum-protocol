@@ -48,6 +48,24 @@ export default function About() {
       description: "Former time traveler with 10M+ temporal journeys who understands the existential dread of meeting yourself intimately.",
       color: "quantum-green",
     },
+    {
+      name: "Dr. Chad Chrono-Bro",
+      role: "Founder & Chief Temporal Disruptor",
+      description: "Discovered time travel while reheating chicken and rice. Currently managing multiple timelines while maintaining his gains.",
+      color: "neon-purple",
+    },
+    {
+      name: "Temporal Jenny",
+      role: "Senior Paradox Consultant",
+      description: "Specializes in untangling complex temporal loops and explaining to customers why they can't kill Hitler.",
+      color: "neon-amber",
+    },
+    {
+      name: "Quantum Kevin",
+      role: "Director of Timeline Compliance",
+      description: "Ensures all time travel operations meet P.E.N.I.S. council standards and maintains our 79.7% accuracy rating.",
+      color: "quantum-cyan",
+    },
   ];
 
   return (
@@ -201,7 +219,7 @@ export default function About() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
