@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { Twitter, Linkedin, Github } from "lucide-react";
+import { Github } from "lucide-react";
+import { SiX } from "react-icons/si";
 
 export function Footer() {
   const footerSections = [
@@ -66,23 +67,19 @@ export function Footer() {
             </p>
             <div className="flex justify-center space-x-4">
               <motion.a
-                href="#"
+                href="https://x.com/NSNSEQuantum"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-cool-gray hover:text-quantum-cyan transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Twitter size={20} />
+                <SiX size={20} />
               </motion.a>
               <motion.a
-                href="#"
-                className="text-cool-gray hover:text-quantum-magenta transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Linkedin size={20} />
-              </motion.a>
-              <motion.a
-                href="#"
+                href="https://www.youtube.com/watch?v=IYkpHNTF0dU"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-cool-gray hover:text-quantum-green transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
