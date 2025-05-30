@@ -3,6 +3,7 @@ import { Users, Target, Zap, Award } from "lucide-react";
 import chadChronoBroImage from "@assets/image_1748626524709.png";
 import elonTuskImage from "@assets/image_1748627294323.png";
 import janetJannybotImage from "@assets/image_1748627604056.png";
+import lilSemImage from "@assets/image_1748631800469.png";
 
 export default function About() {
   const values = [
@@ -55,10 +56,11 @@ export default function About() {
       image: janetJannybotImage,
     },
     {
-      name: "Sarah Paradox",
-      role: "Head of Customer Experience",
-      description: "Former time traveler with 10M+ temporal journeys who understands the existential dread of meeting yourself intimately.",
+      name: "Lil 'Sem",
+      role: "Intern / Hype Consultant",
+      description: "Quantum-native Gen Z humanoid fluent in TA jargon. Aspiring rap artist. 1400 years behind in child support payments.",
       color: "quantum-green",
+      image: lilSemImage,
     },
     {
       name: "Temporal Jenny",
