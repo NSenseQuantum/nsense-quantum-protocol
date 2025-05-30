@@ -207,7 +207,7 @@ export default function Technology() {
               <span className="text-neon-purple neon-text">System Architecture</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              A quantum-classical hybrid architecture designed for scalability and security.
+              A quantum-temporal hybrid architecture designed for chronological stability and paradox prevention.
             </p>
           </motion.div>
 
@@ -257,18 +257,18 @@ export default function Technology() {
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">
                 <p>
-                  Our quantum computing approach doesn't just analyze feedback faster—it reveals
-                  patterns and insights that classical computing simply cannot detect.
+                  Our quantum temporal approach doesn't just move you through time faster—it reveals
+                  historical patterns and possibilities that classical physics simply cannot access.
                 </p>
                 <p>
-                  By leveraging quantum superposition and entanglement, we can process multiple
-                  sentiment scenarios simultaneously, giving you a multidimensional view of your
-                  audience's true feelings.
+                  By leveraging quantum superposition and chronological entanglement, we can process multiple
+                  timeline scenarios simultaneously, giving you a multidimensional view of past,
+                  present, and potential futures.
                 </p>
                 <p>
                   This isn't just an incremental improvement—it's a fundamental shift in how
-                  feedback analysis works, opening up possibilities that were previously
-                  impossible.
+                  time travel works, opening up temporal possibilities that were previously
+                  impossible and occasionally illegal.
                 </p>
               </div>
             </motion.div>
@@ -287,20 +287,20 @@ export default function Technology() {
                 <Rocket className="text-white text-4xl" />
               </motion.div>
               <h3 className="text-2xl font-orbitron font-bold text-quantum-magenta mb-4">
-                Quantum Advantage
+                Temporal Advantage
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-cool-gray">Processing Speed</span>
+                  <span className="text-cool-gray">Time Jump Speed</span>
                   <span className="text-quantum-cyan font-bold">10,000x Faster</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-cool-gray">Pattern Recognition</span>
-                  <span className="text-quantum-magenta font-bold">99.97% Accuracy</span>
+                  <span className="text-cool-gray">Historical Accuracy</span>
+                  <span className="text-quantum-magenta font-bold">89.7% Verified</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-cool-gray">Scalability</span>
-                  <span className="text-quantum-green font-bold">Infinite</span>
+                  <span className="text-cool-gray">Timeline Coverage</span>
+                  <span className="text-quantum-green font-bold">47 Dimensions</span>
                 </div>
               </div>
             </motion.div>
