@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Users, Target, Zap, Award } from "lucide-react";
 import chadChronoBroImage from "@assets/image_1748626524709.png";
 import elonTuskImage from "@assets/image_1748627294323.png";
+import janetJannybotImage from "@assets/image_1748627604056.png";
 
 export default function About() {
   const values = [
@@ -47,10 +48,11 @@ export default function About() {
       image: elonTuskImage,
     },
     {
-      name: "Marcus Chronos",
-      role: "CTO & Timeline Safety Officer",
-      description: "Ex-NASA physicist specializing in temporal mechanics and preventing customers from becoming their own grandfather.",
+      name: "Janet 'Jannybot' 7000",
+      role: "Quantum Policy Compliance Unit",
+      description: "Technically a sentient spreadsheet. Once fined Lee Harvey Oswald for GDPR violations. Affectionatlely known in the staff room as 'that miserable b*tch'.",
       color: "quantum-magenta",
+      image: janetJannybotImage,
     },
     {
       name: "Sarah Paradox",
