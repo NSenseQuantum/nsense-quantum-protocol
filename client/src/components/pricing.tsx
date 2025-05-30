@@ -6,7 +6,7 @@ export function Pricing() {
   const plans = [
     {
       name: "Day Tripper",
-      price: "$420",
+      price: "NSNSE420",
       description: "Perfect for temporal beginners",
       features: [
         { name: "Basic paradox insurance", included: true },
@@ -23,7 +23,7 @@ export function Pricing() {
     },
     {
       name: "Historical Explorer",
-      price: "$1,337",
+      price: "NSNSE1,337",
       description: "For serious time travelers",
       features: [
         { name: "Advanced paradox insurance", included: true },
@@ -40,7 +40,7 @@ export function Pricing() {
     },
     {
       name: "Epoch Adventurer",
-      price: "$6,969",
+      price: "NSNSE6,969",
       description: "For temporal connoisseurs",
       features: [
         { name: "Unlimited paradox insurance", included: true },
