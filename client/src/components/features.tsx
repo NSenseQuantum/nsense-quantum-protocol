@@ -5,14 +5,14 @@ export function Features() {
   const features = [
     {
       icon: Brain,
-      title: "AI Sentiment Analysis",
-      description: "Advanced machine learning algorithms analyze feedback sentiment with 99.7% accuracy, categorizing emotions and intent automatically.",
+      title: "Vast MCP Servers",
+      description: "Using our expansive teams of Multiple Chinese Persons incorporated with Federated Learning, we can pinpoint your arrival date within +/- 18s of the requested date",
       color: "quantum-cyan",
       gradient: "from-quantum-cyan to-blue-500",
       items: [
-        "Multi-platform integration",
-        "Real-time data sync",
-        "Smart duplicate detection",
+        "Highly educated asians",
+        "Quantum braincell synergy",
+        "Optimised via Heisenberg grade Methamphetamine",
       ],
     },
     {
@@ -88,10 +88,10 @@ export function Features() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-cyan">Quantum Features</span>
+            <span className="text-quantum-cyan">Time Travel as a Service (TTaaS)</span>
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-            Experience the next generation of feedback analysis with AI-powered sentiment detection and quantum-speed processing.
+            Experience the wonders of Time Travel with our cutting edge technology and bespoke luxury packages
           </p>
         </motion.div>
 

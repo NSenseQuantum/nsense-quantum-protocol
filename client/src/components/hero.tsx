@@ -66,7 +66,7 @@ export function Hero() {
             <br />
             <span className="text-white">Temporal</span>
             <br />
-            <span className="text-quantum-magenta">Deconfluctuation</span>
+            <span className="text-quantum-magenta">Decapitulation</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-3xl mx-auto mb-8 leading-relaxed"
