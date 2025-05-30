@@ -58,7 +58,7 @@ export function Footer() {
               <div className="w-8 h-8 bg-gradient-to-r from-quantum-cyan to-quantum-magenta rounded-lg flex items-center justify-center">
                 <div className="w-5 h-5 bg-white rounded-full opacity-90"></div>
               </div>
-              <span className="text-xl font-orbitron font-bold text-quantum-cyan neon-text">
+              <span className="text-xl font-orbitron font-bold text-quantum-cyan">
                 N-Sense Quantum
               </span>
             </motion.div>

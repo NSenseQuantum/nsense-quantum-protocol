@@ -74,7 +74,7 @@ export default function Technology() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-quantum-cyan neon-text">Quantum</span>{" "}
+            <span className="text-quantum-cyan">Quantum</span>{" "}
             <span className="text-white">Technology</span>
           </motion.h1>
           <motion.p
@@ -100,7 +100,7 @@ export default function Technology() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-magenta neon-text">Core Technologies</span>
+              <span className="text-quantum-magenta">Core Technologies</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
               The revolutionary technologies that power our quantum temporal displacement platform.
@@ -161,7 +161,7 @@ export default function Technology() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-green neon-text">Performance Metrics</span>
+              <span className="text-quantum-green">Performance Metrics</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
               Quantum-powered performance that redefines what's possible in real-time temporal navigation.
@@ -204,7 +204,7 @@ export default function Technology() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-neon-purple neon-text">System Architecture</span>
+              <span className="text-neon-purple">System Architecture</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
               A quantum-temporal hybrid architecture designed for chronological stability and paradox prevention.
@@ -252,7 +252,7 @@ export default function Technology() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-orbitron font-bold mb-6 text-quantum-cyan neon-text">
+              <h2 className="text-4xl font-orbitron font-bold mb-6 text-quantum-cyan">
                 The Future is Quantum
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">

@@ -61,7 +61,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-quantum-cyan neon-text">About</span>{" "}
+            <span className="text-quantum-cyan">About</span>{" "}
             <span className="text-white">N-Sense</span>
           </motion.h1>
           <motion.p
@@ -86,7 +86,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-orbitron font-bold mb-6 text-quantum-magenta neon-text">
+              <h2 className="text-4xl font-orbitron font-bold mb-6 text-quantum-magenta">
                 Our Story
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">
@@ -152,7 +152,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-green neon-text">Our Values</span>
+              <span className="text-quantum-green">Our Values</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
               The principles that guide everything we do, from product development to customer success.
@@ -198,7 +198,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-magenta neon-text">Meet Our Team</span>
+              <span className="text-quantum-magenta">Meet Our Team</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
               The brilliant minds behind the quantum revolution in feedback analysis.
