@@ -66,8 +66,8 @@ export function Customization() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-            <span className="text-quantum-green">Temporal Integrity</span> and Travel Standards
+          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
+            Temporal Integrity and Travel Standards
           </h2>
           <p className="text-xl text-cool-gray max-w-3xl mx-auto">
             Please read carefully. Ignorance of these rules may result in time paradoxes, spontaneous moustache growth or an uncancellable marriage to your cousin.

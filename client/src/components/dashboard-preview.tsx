@@ -73,7 +73,7 @@ export function DashboardPreview() {
       platform: "Meet the Stoics",
       sentiment: "Disagreeable",
       timestamp: "10blocks ago",
-      message: "Seneca is an eth maxi. Aurelius couldn't understand that revenue was the core of his empire, not Roman morals. Next time i'll just have a coffee with Mert.",
+      message: "Seneca is an eth maxi. Aurelius didn't understand when I told him he needs to Increase Ballistas, Reduce Legions. Next time i'll just have coffee with Mert.",
       color: "neon-amber",
     },
     {
