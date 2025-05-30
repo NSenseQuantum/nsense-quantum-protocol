@@ -37,20 +37,20 @@ export function DashboardPreview() {
 
   const recentFeedback = [
     {
-      user: { name: "John Doe", initials: "JD" },
-      platform: "Youtube",
-      sentiment: "Positive",
-      timestamp: "2m ago",
-      message: "Amazing content! Your latest video really helped me understand quantum computing concepts. Keep up the great work!",
-      color: "quantum-green",
-    },
-    {
       user: { name: "Al Koholic", initials: "AK" },
       platform: "Dionysus Wine Festival",
       sentiment: "Drunken",
       timestamp: "Not Sure",
       message: "Woke up a decade later in a toga. Don't know where my pants went but thanks to the NLP I did manage to talk my way out of a fight with a minotaur. 10/10 experience even if I did lose a sandal.",
       color: "quantum-green",
+    },
+    {
+      user: { name: "", initials: "" },
+      platform: "",
+      sentiment: "",
+      timestamp: "",
+      message: "",
+      color: "quantum-cyan",
     },
     {
       user: { name: "", initials: "" },
