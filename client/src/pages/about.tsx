@@ -229,7 +229,7 @@ export default function About() {
               <span className="text-quantum-magenta">Meet Our Team</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              The brilliant minds behind the quantum revolution in feedback analysis.
+              The brilliant, and somewhat deranged, minds behind the quantum revolution in temporal travel.
             </p>
           </motion.div>
 
