@@ -235,29 +235,43 @@ export default function About() {
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
-                className="glass-morphism rounded-2xl p-8 text-center hover:border-quantum-cyan transition-all duration-300"
+                className="glass-morphism rounded-2xl p-8 text-center hover:border-quantum-cyan transition-all duration-500 group cursor-pointer overflow-hidden relative"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ 
+                  scale: 1.08,
+                  rotateY: 5,
+                  rotateX: 5,
+                  z: 50
+                }}
+                whileTap={{ scale: 0.98 }}
+                style={{ transformStyle: "preserve-3d" }}
               >
-                <div className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden`}>
+                <div className={`w-24 h-24 bg-gradient-to-r from-${member.color} to-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden group-hover:shadow-2xl group-hover:shadow-${member.color}/30 transition-all duration-500 group-hover:scale-110`}>
                   {member.image ? (
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover rounded-full"
+                      className="w-full h-full object-cover rounded-full group-hover:brightness-110 transition-all duration-500"
                     />
                   ) : (
-                    <span className="text-2xl font-orbitron font-bold text-white">
+                    <span className="text-2xl font-orbitron font-bold text-white group-hover:scale-125 transition-transform duration-300">
                       {member.name.split(' ').map(n => n[0]).join('')}
                     </span>
                   )}
                 </div>
-                <h3 className="text-xl font-orbitron font-bold text-white mb-2">{member.name}</h3>
-                <div className={`text-${member.color} font-semibold mb-4`}>{member.role}</div>
-                <p className="text-cool-gray text-sm">{member.description}</p>
+                <h3 className="text-xl font-orbitron font-bold text-white mb-2 group-hover:text-quantum-cyan transition-colors duration-300">{member.name}</h3>
+                <div className={`text-${member.color} font-semibold mb-4 group-hover:brightness-125 transition-all duration-300`}>{member.role}</div>
+                <p className="text-cool-gray text-sm group-hover:text-white transition-colors duration-300">{member.description}</p>
+                
+                {/* Hover glow effect */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-quantum-cyan/20 to-quantum-magenta/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                
+                {/* Particle effect on hover */}
+                <div className="absolute top-2 right-2 w-2 h-2 bg-quantum-cyan rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-300"></div>
+                <div className="absolute bottom-2 left-2 w-1 h-1 bg-neon-purple rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-all duration-500"></div>
               </motion.div>
             ))}
           </div>
