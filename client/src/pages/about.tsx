@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Users, Target, Zap, Award } from "lucide-react";
 import chadChronoBroImage from "@assets/image_1748626524709.png";
+import elonTuskImage from "@assets/image_1748627294323.png";
 
 export default function About() {
   const values = [
@@ -39,10 +40,11 @@ export default function About() {
       image: chadChronoBroImage,
     },
     {
-      name: "Dr. Alexandra Quantum",
-      role: "CEO & Chief Temporal Architect",
-      description: "Former quantum researcher at CERN who accidentally discovered time travel while heating leftover pizza. Now manages paradoxes across 47 timelines.",
+      name: "Elon Tusk",
+      role: "Cryptographic Time-Node Specialist",
+      description: "Runs a side hustle breeding pre-historic pigs. Not allowed to be left alone with miniature rockets.. for reasons we won't mention here",
       color: "quantum-cyan",
+      image: elonTuskImage,
     },
     {
       name: "Marcus Chronos",
