@@ -14,7 +14,7 @@ export default function BookTrip() {
       year: "2500 BCE",
       description: "Witness the construction of the Great Pyramid of Giza",
       duration: "7 days",
-      price: "$15,000",
+      price: "Ψ15,000",
       difficulty: "Moderate",
       highlights: ["Great Pyramid construction", "Meet ancient pharaohs", "Nile River cruise"],
       color: "quantum-cyan",
@@ -24,7 +24,7 @@ export default function BookTrip() {
       year: "1503 CE",
       description: "Experience the height of the Renaissance in Florence",
       duration: "5 days",
-      price: "$12,000",
+      price: "Ψ12,000",
       difficulty: "Easy",
       highlights: ["Leonardo da Vinci's workshop", "Michelangelo's studio", "Medici court"],
       color: "quantum-magenta",
@@ -34,7 +34,7 @@ export default function BookTrip() {
       year: "150 Million BCE",
       description: "Explore the age of dinosaurs in their natural habitat",
       duration: "3 days",
-      price: "$25,000",
+      price: "Ψ25,000",
       difficulty: "Extreme",
       highlights: ["Live dinosaur observation", "Prehistoric landscapes", "Time capsule safety"],
       color: "quantum-green",
@@ -236,20 +236,20 @@ export default function BookTrip() {
                 <div className="space-y-2 text-cool-gray">
                   <div className="flex justify-between">
                     <span>Base Price:</span>
-                    <span>$15,000</span>
+                    <span>Ψ15,000</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Quantum Insurance:</span>
-                    <span>$1,500</span>
+                    <span>Ψ1,500</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Guide Services:</span>
-                    <span>$500</span>
+                    <span>Ψ500</span>
                   </div>
                   <div className="border-t border-quantum-cyan/30 pt-2 mt-2">
                     <div className="flex justify-between text-white font-bold text-lg">
                       <span>Total:</span>
-                      <span>$17,000</span>
+                      <span>Ψ17,000</span>
                     </div>
                   </div>
                 </div>
