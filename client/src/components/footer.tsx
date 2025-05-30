@@ -28,10 +28,30 @@ export function Footer() {
   return (
     <footer className="bg-space-dark border-t border-quantum-cyan/20 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          {/* Temporal Services - Left */}
+          <div className="text-center lg:text-left">
+            <h3 className="text-white font-semibold mb-4">{footerSections[0].title}</h3>
+            <ul className="space-y-2">
+              {footerSections[0].links.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href}>
+                    <motion.a
+                      className="text-cool-gray hover:text-quantum-cyan transition-colors text-sm"
+                      whileHover={{ x: 5 }}
+                    >
+                      {link.label}
+                    </motion.a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company Logo/Description - Center */}
+          <div className="space-y-4 text-center">
             <motion.div
-              className="flex items-center space-x-2"
+              className="flex items-center justify-center space-x-2"
               whileHover={{ scale: 1.05 }}
             >
               <div className="w-8 h-8 bg-gradient-to-r from-quantum-cyan to-quantum-magenta rounded-lg flex items-center justify-center">
@@ -41,10 +61,10 @@ export function Footer() {
                 N-Sense Quantum
               </span>
             </motion.div>
-            <p className="text-cool-gray text-sm">
+            <p className="text-cool-gray text-sm max-w-xs mx-auto">
               Revolutionizing temporal displacement with quantum-powered chronology for time travelers across all dimensions.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4">
               <motion.a
                 href="#"
                 className="text-cool-gray hover:text-quantum-cyan transition-colors"
@@ -72,37 +92,25 @@ export function Footer() {
             </div>
           </div>
 
-          {footerSections.map((section, index) => (
-            <div key={section.title}>
-              <h3 className="text-white font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    {link.href.startsWith('http') ? (
-                      <motion.a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cool-gray hover:text-quantum-cyan transition-colors text-sm"
-                        whileHover={{ x: 5 }}
-                      >
-                        {link.label}
-                      </motion.a>
-                    ) : (
-                      <Link href={link.href}>
-                        <motion.a
-                          className="text-cool-gray hover:text-quantum-cyan transition-colors text-sm"
-                          whileHover={{ x: 5 }}
-                        >
-                          {link.label}
-                        </motion.a>
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Resources - Right */}
+          <div className="text-center lg:text-right">
+            <h3 className="text-white font-semibold mb-4">{footerSections[1].title}</h3>
+            <ul className="space-y-2">
+              {footerSections[1].links.map((link) => (
+                <li key={link.label}>
+                  <motion.a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cool-gray hover:text-quantum-cyan transition-colors text-sm"
+                    whileHover={{ x: -5 }}
+                  >
+                    {link.label}
+                  </motion.a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-quantum-cyan/20 mt-8 pt-8 text-center">
