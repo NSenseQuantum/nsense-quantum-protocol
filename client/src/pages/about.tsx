@@ -52,7 +52,7 @@ export default function About() {
     {
       name: "Dr. Chad Chrono-Bro",
       role: "Founder & Chief Temporal Disruptor",
-      description: "Discovered time travel while reheating chicken and rice. Currently managing multiple timelines while maintaining his gains.",
+      description: "Accidentally invented time travel whilst reheating chicken and rice. Believes the multiverse can be conquered with clean macros and shredded delts.",
       color: "neon-purple",
       image: chadChronoBroImage,
     },
