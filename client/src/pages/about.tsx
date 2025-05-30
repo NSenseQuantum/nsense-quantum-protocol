@@ -4,6 +4,7 @@ import chadChronoBroImage from "@assets/image_1748626524709.png";
 import elonTuskImage from "@assets/image_1748627294323.png";
 import janetJannybotImage from "@assets/image_1748627604056.png";
 import lilSemImage from "@assets/image_1748631800469.png";
+import priyaRebootImage from "@assets/image_1748632536904.png";
 
 export default function About() {
   const values = [
@@ -63,10 +64,11 @@ export default function About() {
       image: lilSemImage,
     },
     {
-      name: "Temporal Jenny",
-      role: "Senior Paradox Consultant",
-      description: "Specializes in untangling complex temporal loops and explaining to customers why they can't kill Hitler.",
+      name: "Priya Reboot",
+      role: "Reality Restoration Manager",
+      description: "Reinstalls corrupted timelines. Known as 'Rebootylicious' (colleague-assigned nickname, said colleague has a meeting with HR next Tuesday). Has personally redacted over 14,000 anachronistic TikToks from the Middle Ages.",
       color: "neon-amber",
+      image: priyaRebootImage,
     },
     {
       name: "Quantum Kevin",
