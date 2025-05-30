@@ -90,7 +90,10 @@ export default function About() {
               </h2>
               <div className="space-y-6 text-cool-gray text-lg">
                 <p>
-                  Born from the frustration of boring memes, linear time constraints and one-dimensional exercise, N-Sense Quantum emerged when our founder, Dr. Chad Chrono-Bro, accidentally discovered time travel whilst trying to reheat his chicken and rice in the microwave. Unknown to Chad, his microwave had become spacially entangled with a rogue particle accelerator, two cans of Monster Energy and a bluetooth-enabled smart protein shaker. Upon pressing start, spacetime folded in on itself.
+                  Born from the frustration of boring memes, linear time constraints and one-dimensional exercise, N-Sense Quantum emerged when our founder, Dr. Chad Chrono-Bro, accidentally discovered time travel whilst trying to reheat his chicken and rice in the microwave.
+                </p>
+                <p>
+                  Unknown to Chad, his microwave had become spacially entangled with a rogue particle accelerator, two cans of Monster Energy and a bluetooth-enabled smart protein shaker. Upon pressing start, spacetime folded in on itself.
                 </p>
                 <p>
                   2 minutes later, Chad's meal was steaming hot. And he was inexplicably standing in the middle of Ancient Greece, shirtless and holding a fork made from an undeservedly sacrificed squirrel.
