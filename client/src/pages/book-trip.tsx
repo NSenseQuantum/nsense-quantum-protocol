@@ -30,13 +30,13 @@ export default function BookTrip() {
       color: "quantum-magenta",
     },
     {
-      era: "Jurassic Period",
-      year: "150 Million BCE",
-      description: "Explore the age of dinosaurs in their natural habitat",
-      duration: "3 days",
+      era: "New York",
+      year: "2001",
+      description: "Explore the event that launched a thousand forums. Nanosteel™ Hard-Hat included.",
+      duration: "1 day",
       price: "Ψ25,000",
       difficulty: "Extreme",
-      highlights: ["Live dinosaur observation", "Prehistoric landscapes", "Time capsule safety"],
+      highlights: ["Steel beam density testing station", "Flight 93 VR re-enactment", "Dick Cheney themed escape room"],
       color: "quantum-green",
     },
   ];
@@ -151,7 +151,7 @@ export default function BookTrip() {
                     </div>
 
                     <Button className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}>
-                      Select Journey
+                      Trip Preview
                     </Button>
                   </CardContent>
                 </Card>
@@ -227,7 +227,7 @@ export default function BookTrip() {
                     </div>
 
                     <Button className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}>
-                      Select Journey
+                      Trip Preview
                     </Button>
                   </CardContent>
                 </Card>
@@ -303,7 +303,7 @@ export default function BookTrip() {
                     </div>
 
                     <Button className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}>
-                      Select Journey
+                      Trip Preview
                     </Button>
                   </CardContent>
                 </Card>
