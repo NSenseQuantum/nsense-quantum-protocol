@@ -43,7 +43,7 @@ export default function Technology() {
   const architecture = [
     {
       layer: "Reality Entry Node (REN)",
-      description: "Testing with 800 interns. Only one got stuck in the Renaissance.",
+      description: "Tested with 800 interns. Only one got stuck in the Renaissance.",
       color: "quantum-cyan",
     },
     {
