@@ -104,7 +104,7 @@ export default function Technology() {
               <span className="text-quantum-magenta">Core Technologies</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              The revolutionary technologies that power our quantum temporal displacement platform.
+              Built by top scientists and ethically ambiguous backroom hallucinations.
             </p>
           </motion.div>
 
