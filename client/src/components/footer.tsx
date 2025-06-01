@@ -19,7 +19,7 @@ export function Footer() {
       title: "Resources",
       links: [
         { label: "Documentation", href: "https://www.youtube.com/watch?v=SD3qXvuTX1M" },
-        { label: "Help Center", href: "https://www.youtube.com/watch?v=8zEcza7azd0" },
+        { label: "Help Center", href: "https://www.reddit.com/r/AskReddit/comments/15ki71v/what_is_the_worst_advice_youve_ever_received/" },
         { label: "Privacy Policy", href: "https://www.youtube.com/watch?v=U60BEcI4AgI" },
         { label: "Terms of Service", href: "https://www.youtube.com/watch?v=ukeJG_oGv10" },
       ],

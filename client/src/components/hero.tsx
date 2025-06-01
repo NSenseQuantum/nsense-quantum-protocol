@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Play, Rocket, ChevronDown } from "lucide-react";
+import { QuantumVisualization } from "@/components/quantum-visualization";
 
 export function Hero() {
   const stats = [
@@ -12,9 +13,9 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20">
-      {/* Floating elements */}
+      {/* Quantum Visualizations */}
       <motion.div
-        className="absolute top-20 left-10 w-4 h-4 bg-quantum-cyan rounded-full opacity-60"
+        className="absolute top-20 left-10 opacity-60"
         animate={{
           y: [0, -20, 0],
         }}
@@ -23,11 +24,14 @@ export function Hero() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-      />
+      >
+        <QuantumVisualization variant="orbit" size="small" />
+      </motion.div>
+      
       <motion.div
-        className="absolute top-40 right-20 w-6 h-6 bg-quantum-magenta rounded-full opacity-40"
+        className="absolute top-40 right-20 opacity-50"
         animate={{
-          y: [0, -20, 0],
+          y: [0, -15, 0],
         }}
         transition={{
           duration: 6,
@@ -35,11 +39,14 @@ export function Hero() {
           ease: "easeInOut",
           delay: 1,
         }}
-      />
+      >
+        <QuantumVisualization variant="cube" size="small" />
+      </motion.div>
+      
       <motion.div
-        className="absolute bottom-40 left-20 w-3 h-3 bg-quantum-green rounded-full opacity-50"
+        className="absolute bottom-40 left-20 opacity-40"
         animate={{
-          y: [0, -20, 0],
+          y: [0, -25, 0],
         }}
         transition={{
           duration: 6,
@@ -47,7 +54,25 @@ export function Hero() {
           ease: "easeInOut",
           delay: 2,
         }}
-      />
+      >
+        <QuantumVisualization variant="sphere" size="small" />
+      </motion.div>
+
+      {/* Central large quantum visualization */}
+      <motion.div
+        className="absolute top-1/2 right-10 transform -translate-y-1/2 opacity-30"
+        animate={{
+          y: [0, -30, 0],
+          x: [0, 10, 0],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <QuantumVisualization variant="helix" size="large" />
+      </motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
