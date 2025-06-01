@@ -134,7 +134,7 @@ export default function Contact() {
     ctx.font = '20px Arial, sans-serif';
     const starCount = parseInt(formData.stars) || 0;
     const stars = '★'.repeat(starCount) + '☆'.repeat(5 - starCount);
-    ctx.fillText(stars, 260, 235);
+    ctx.fillText(stars, 220, 230);
 
     // Review box
     ctx.fillStyle = '#ffffff';
