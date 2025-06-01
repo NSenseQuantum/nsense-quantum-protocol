@@ -12,7 +12,7 @@ export function Footer() {
         { label: "About", href: "/about" },
         { label: "Technology", href: "/technology" },
         { label: "Book a Trip", href: "/book-trip" },
-        { label: "Contact", href: "/contact" },
+        { label: "Feedback", href: "/contact" },
       ],
     },
     {
