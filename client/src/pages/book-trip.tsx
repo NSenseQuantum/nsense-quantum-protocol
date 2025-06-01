@@ -52,8 +52,8 @@ export default function BookTrip() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-quantum-cyan">Book Your</span>{" "}
-            <span className="text-white">Time Journey</span>
+            <span className="text-quantum-cyan">Book a</span>{" "}
+            <span className="text-white">Trip</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-4xl mx-auto mb-8"
@@ -61,8 +61,7 @@ export default function BookTrip() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Experience history firsthand with our quantum-powered time travel technology. 
-            Safe, secure, and scientifically certified journeys through time.
+            Experience the past, future and alternate presents with our quantum-powered time travel technology. Safe?, secure, and scientifically un-certified journeys through time.
           </motion.p>
           <motion.div
             className="flex justify-center space-x-8 text-sm"
@@ -72,7 +71,7 @@ export default function BookTrip() {
           >
             <div className="flex items-center text-quantum-green">
               <div className="w-2 h-2 bg-quantum-green rounded-full mr-2"></div>
-              99.9% Safety Rating
+              69.7% UnSafety Rating
             </div>
             <div className="flex items-center text-quantum-cyan">
               <div className="w-2 h-2 bg-quantum-cyan rounded-full mr-2"></div>
@@ -80,7 +79,7 @@ export default function BookTrip() {
             </div>
             <div className="flex items-center text-quantum-magenta">
               <div className="w-2 h-2 bg-quantum-magenta rounded-full mr-2"></div>
-              Expert Guides
+              Mentally unstable & Drug-addled Guides
             </div>
           </motion.div>
         </div>
