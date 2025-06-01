@@ -227,7 +227,7 @@ export default function Contact() {
       </section>
 
       {/* Form Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="glass-morphism rounded-xl p-8"
@@ -236,7 +236,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-orbitron font-bold text-white mb-6">Generate Your Feedback Report</h3>
+            <h3 className="text-2xl font-orbitron font-bold text-white mb-6">Your Feedback</h3>
             <div className="space-y-6">
               <div>
                 <label className="text-cool-gray font-semibold block mb-2">Name</label>
@@ -289,7 +289,7 @@ export default function Contact() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button
                   onClick={generateMeme}
-                  className="w-full bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-white py-3 font-semibold hover:shadow-lg hover:shadow-quantum-cyan/50 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-black py-3 font-semibold hover:shadow-lg hover:shadow-quantum-cyan/50 transition-all duration-300"
                 >
                   <Share2 className="mr-2" size={20} />
                   Generate
