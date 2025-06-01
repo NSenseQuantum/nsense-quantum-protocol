@@ -42,23 +42,23 @@ export default function Technology() {
 
   const architecture = [
     {
-      layer: "Temporal Interface",
-      description: "Quantum-based chronology dashboard with real-time timeline visualizations",
+      layer: "Reality Entry Node (REN)",
+      description: "Testing with 800 interns. Only one got stuck in the Renaissance.",
       color: "quantum-cyan",
     },
     {
-      layer: "Paradox Gateway",
-      description: "Quantum-secured temporal portals and chronological endpoints",
+      layer: "The Clockulator",
+      description: "Performs 8.6 trillion calculations per second to determine whether or not you are about to royally f*ck things up.",
       color: "quantum-magenta",
     },
     {
-      layer: "Time Processing Engine",
-      description: "Quantum-classical hybrid computing for temporal displacement calculations",
+      layer: "Event Horizon Dropbox",
+      description: "Now featuring 'rollback' mode incase your great-grandfather gets deleted.",
       color: "quantum-green",
     },
     {
-      layer: "Timeline Storage",
-      description: "Quantum-encrypted distributed temporal database with causality compliance",
+      layer: "Quantum Dashboard for People with Strong Opinions",
+      description: "Touch-sensitive UI with timeline sliders, paradox toggles and non-verbal snack alerts.",
       color: "neon-purple",
     },
   ];
@@ -205,10 +205,10 @@ export default function Technology() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-neon-purple">System Architecture</span>
+              <span className="text-neon-purple">Temporal Framework for Non-Explosive Travel</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              A quantum-temporal hybrid architecture designed for chronological stability and paradox prevention.
+              Spacetime's most robust framework — now with 20% more buzzwords per femtosecond.
             </p>
           </motion.div>
 
