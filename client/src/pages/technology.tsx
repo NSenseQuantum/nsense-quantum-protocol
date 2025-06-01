@@ -261,7 +261,7 @@ export default function Technology() {
                   Time is broken, and now we've broke it better. Our Quantum Temporal Stack operates on a frequency known only to former 2007 YouTube Commenters and anonymous internet trolls. Using our AI generated brain-flux overlays, we scan for historical rips, then patch them with copium-infused ZK compressed full stack algorithms.
                 </p>
                 <p>
-                  Thanks to our FeelsBadMan processing Enginer, N-Sense can simulate every (nearly) version of your personal timeline, from 'wife changing money' to 'broke & over exposed'.
+                  Thanks to our FeelsBadMan processing Engine, N-Sense can simulate every (nearly) version of your personal timeline, from 'wife changing money' to 'broke & over exposed'.
                 </p>
                 <p>
                   We're not just disrupting the time travel industry, we're speedrunning it in all its full 1080p glory.
