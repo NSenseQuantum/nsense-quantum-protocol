@@ -11,12 +11,12 @@ export default function BookTrip() {
   const destinations = [
     {
       era: "Ancient Egypt",
-      year: "2500 BCE",
+      year: "17,420 BCE",
       description: "Who built the pyramids? Egyptians? Aliens? Mexicans? How did they do it?",
       duration: "7 days",
       price: "Ψ42,000",
       difficulty: "Easy",
-      highlights: ["Great Pyramid Construction", "Holy Cats"],
+      highlights: ["Construction of the pyramids", "Heiroglyph Grafitti course", "Open mic night at the Sphix"],
       color: "quantum-cyan",
     },
     {
