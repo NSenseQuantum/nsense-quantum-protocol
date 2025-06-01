@@ -34,9 +34,10 @@ export default function Technology() {
   ];
 
   const metrics = [
-    { label: "Time Jump Speed", value: "10,000x leveraged", color: "quantum-cyan" },
-    { label: "Historical Accuracy", value: "Not Alot", color: "quantum-magenta" },
-    { label: "Timeline Coverage", value: "47(+11) Dimensions", color: "quantum-green" },
+    { label: "Temporal Jump Speed", value: "~1.4s", color: "quantum-cyan" },
+    { label: "Timeline Accuracy", value: "77.7%", color: "quantum-magenta" },
+    { label: "Daily Time Travels", value: "1M+", color: "quantum-green" },
+    { label: "Paradox Prevention", value: "0.992%", color: "neon-purple" },
   ];
 
   const architecture = [
