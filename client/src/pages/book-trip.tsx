@@ -76,13 +76,13 @@ export default function BookTrip() {
 
   const redactedDestinations = [
     {
-      era: "Ancient Egypt",
-      year: "17,420 BCE",
-      description: "Who built the pyramids? Egyptians? Aliens? Mexicans? How did they do it?",
-      duration: "7 days",
-      price: "Ψ42,000",
-      difficulty: "Easy",
-      highlights: ["Construction of the pyramids", "Heiroglyph Grafitti course", "Open mic night at the Sphinx"],
+      era: "Hung like a Horse",
+      year: "1206 - 1227",
+      description: "Half horseback orgy, half historical fever dream. Genghis Khan spread his seed across half the world, now... it's your turn.",
+      duration: "21 years",
+      price: "Ψ500,000",
+      difficulty: "Exhausting",
+      highlights: ["Learn the tricks of polygamy from Genghis Khan himself", "Participate in numerous games of 'Yurt or Dare'", "Steppe-Daddy Training"],
       color: "quantum-cyan",
     },
     {
