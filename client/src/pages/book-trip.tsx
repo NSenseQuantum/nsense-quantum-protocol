@@ -41,6 +41,39 @@ export default function BookTrip() {
     },
   ];
 
+  const dankDestinations = [
+    {
+      era: "Harambe Memorial",
+      year: "2016",
+      description: "Part historical reenactment, part ritualized collective trauma dump. See the zoo security guard nervously clutching his clipboard while Reddit explodes into a grieving frenzy.",
+      duration: "7 days",
+      price: "Ψ42,000",
+      difficulty: "Medium",
+      highlights: ["Candlelight grief circle", "Dicks out flash mob", "See the alternate timeline where the kid and Harambe become best friends and solve crimes in 1980s Los Angeles"],
+      color: "quantum-cyan",
+    },
+    {
+      era: "Sniper's Perch & Pizza Party",
+      year: "1963",
+      description: "Comes with a complimentary sixth-floor window seat and a suspiciously pre-heated pizza.",
+      duration: "3 days",
+      price: "Ψ12,000",
+      difficulty: "Mind-blowing",
+      highlights: ["Stop off at the Sniper Selfie Station for some memorabilia", "CIA 'No Comment' Tour - A workshop in plausible deniability", "Trajectory Theater, where the bullet is the protagonist"],
+      color: "quantum-magenta",
+    },
+    {
+      era: "New York",
+      year: "2001",
+      description: "Explore the event that launched a thousand forums. Nanosteel™ Hard-Hat included.",
+      duration: "1 day",
+      price: "Ψ25,000",
+      difficulty: "Extreme",
+      highlights: ["Steel beam density testing station", "Flight 93 VR re-enactment", "Dick Cheney themed escape room"],
+      color: "quantum-green",
+    },
+  ];
+
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
@@ -180,7 +213,7 @@ export default function BookTrip() {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {destinations.map((destination, index) => (
+            {dankDestinations.map((destination, index) => (
               <motion.div
                 key={destination.era + '-2'}
                 initial={{ opacity: 0, y: 30 }}
