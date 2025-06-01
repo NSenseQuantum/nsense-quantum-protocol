@@ -19,9 +19,9 @@ export default function Technology() {
     },
     {
       icon: Zap,
-      title: "Distributed Chronology",
-      description: "Multidimensional time network ensures sub-nanosecond temporal accuracy regardless of which century you're visiting.",
-      features: ["47 timeline nodes", "Real-time paradox processing", "99.89% temporal integrity"],
+      title: "Global Omnitemporal Accuracy Tracker",
+      description: "Eliminates most forms of lag, cosmic (or asian) drift and all interdimensional crop-dusting.",
+      features: ["Cosmically-Fresh Seals keep your historical trajectory minty and airtight", "Real-Time Paradox Processing, even if that paradox had beans for lunch", "Sub-Second Sync Layer - faster than a sneeze, smoother than a whisper, quieter than a fart in church"],
       color: "quantum-green",
     },
     {
