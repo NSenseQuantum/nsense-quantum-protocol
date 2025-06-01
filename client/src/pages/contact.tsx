@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface FeedbackForm {
   name: string;
@@ -23,6 +23,16 @@ export default function Contact() {
   const [showPreview, setShowPreview] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
+  // Draw canvas when modal opens
+  useEffect(() => {
+    if (showPreview) {
+      // Small delay to ensure canvas is mounted
+      setTimeout(() => {
+        drawCanvas();
+      }, 100);
+    }
+  }, [showPreview]);
+
   const generateMeme = () => {
     console.log("Generate meme called with data:", formData);
     
@@ -31,10 +41,15 @@ export default function Contact() {
       return;
     }
     
+    // Show the preview modal first, then draw on canvas
+    setShowPreview(true);
+  };
+
+  const drawCanvas = () => {
     const canvas = canvasRef.current;
-    console.log("Canvas ref:", canvas);
+    console.log("Drawing canvas, ref:", canvas);
     if (!canvas) {
-      console.error("Canvas not found!");
+      console.error("Canvas not found during draw!");
       return;
     }
     
@@ -164,9 +179,8 @@ export default function Contact() {
     ctx.textAlign = 'center';
     ctx.fillText('CLASSIFIED - FOR MEME USE ONLY', 400, 540);
     ctx.fillText('SHARE RESPONSIBLY ACROSS TIMELINES', 400, 560);
-
-    // Show the preview modal
-    setShowPreview(true);
+    
+    console.log("Canvas drawing completed!");
   };
 
   const downloadMeme = () => {
