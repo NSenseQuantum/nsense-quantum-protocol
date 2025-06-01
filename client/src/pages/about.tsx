@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Users, Target, Zap, Award, X } from "lucide-react";
 import { useState } from "react";
+import { QuantumVisualization } from "@/components/quantum-visualization";
 import chadChronoBroImage from "@assets/image_1748626524709.png";
 import elonTuskImage from "@assets/image_1748627294323.png";
 import janetJannybotImage from "@assets/image_1748627604056.png";
@@ -136,13 +137,18 @@ export default function About() {
               </div>
             </motion.div>
             <motion.div
-              className="glass-morphism rounded-2xl p-8"
+              className="glass-morphism rounded-2xl p-8 relative"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="bg-gradient-to-r from-quantum-cyan/20 to-quantum-magenta/20 rounded-xl p-8 text-center">
+              {/* Background quantum visualization */}
+              <div className="absolute top-4 right-4 opacity-30">
+                <QuantumVisualization variant="helix" size="medium" interactive={false} />
+              </div>
+              
+              <div className="bg-gradient-to-r from-quantum-cyan/20 to-quantum-magenta/20 rounded-xl p-8 text-center relative z-10">
                 <div className="text-4xl font-orbitron font-bold text-quantum-cyan mb-2">2011</div>
                 <div className="text-cool-gray mb-4">Accidentally Founded</div>
                 <div className="grid grid-cols-2 gap-6 mt-8">

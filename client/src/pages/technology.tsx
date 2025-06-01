@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Cpu, Brain, Zap, Shield, Globe, Rocket } from "lucide-react";
+import { QuantumVisualization } from "@/components/quantum-visualization";
 
 export default function Technology() {
   const technologies = [
@@ -119,13 +120,22 @@ export default function Technology() {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
               >
-                <motion.div
-                  className={`w-16 h-16 bg-gradient-to-r from-${tech.color} to-blue-500 rounded-2xl flex items-center justify-center mb-6`}
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <tech.icon className="text-white text-2xl" size={28} />
-                </motion.div>
+                <div className="flex items-center justify-between mb-6">
+                  <motion.div
+                    className={`w-16 h-16 bg-gradient-to-r from-${tech.color} to-blue-500 rounded-2xl flex items-center justify-center`}
+                    whileHover={{ rotate: 360 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <tech.icon className="text-white text-2xl" size={28} />
+                  </motion.div>
+                  <div className="flex-1 flex justify-end">
+                    <QuantumVisualization 
+                      variant={index % 2 === 0 ? "orbit" : "cube"} 
+                      size="small" 
+                      interactive={true} 
+                    />
+                  </div>
+                </div>
                 <h3 className={`text-2xl font-orbitron font-bold mb-4 text-${tech.color}`}>
                   {tech.title}
                 </h3>
@@ -170,8 +180,13 @@ export default function Technology() {
           </motion.div>
 
           <div className="holographic-border rounded-3xl p-1">
-            <div className="bg-navy-dark rounded-3xl p-12">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="bg-navy-dark rounded-3xl p-12 relative">
+              {/* Central quantum visualization for metrics */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20">
+                <QuantumVisualization variant="sphere" size="large" interactive={false} />
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
                 {metrics.map((metric, index) => (
                   <motion.div
                     key={metric.label}
