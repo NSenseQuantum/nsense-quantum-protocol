@@ -12,11 +12,11 @@ export default function BookTrip() {
     {
       era: "Ancient Egypt",
       year: "2500 BCE",
-      description: "Witness the construction of the Great Pyramid of Giza",
+      description: "Who built the pyramids? Egyptians? Aliens? Mexicans? How did they do it?",
       duration: "7 days",
-      price: "Ψ15,000",
-      difficulty: "Moderate",
-      highlights: ["Great Pyramid construction", "Meet ancient pharaohs", "Nile River cruise"],
+      price: "Ψ42,000",
+      difficulty: "Easy",
+      highlights: ["Great Pyramid Construction", "Holy Cats"],
       color: "quantum-cyan",
     },
     {
@@ -96,10 +96,10 @@ export default function BookTrip() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-magenta">Choose Your Destination</span>
+              <span className="text-quantum-magenta">Conspiracy Collective</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              Select from our curated collection of historically significant time periods
+              Answer the questions you've always wanted to answer, in the flesh.
             </p>
           </motion.div>
 
