@@ -165,7 +165,7 @@ export default function Technology() {
               <span className="text-quantum-green">Performance Metrics</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              Quantum-powered performance that redefines what's possible in real-time temporal navigation.
+              These numbers may or may not have been pulled out of a hat during a drunken corporate trip to the vegas sphere.
             </p>
           </motion.div>
 
