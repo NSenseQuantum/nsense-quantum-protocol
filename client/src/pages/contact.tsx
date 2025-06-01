@@ -24,20 +24,31 @@ export default function Contact() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const generateMeme = () => {
+    console.log("Generate meme called with data:", formData);
+    
     if (!formData.name || !formData.tripTaken || !formData.stars || !formData.review) {
       alert("Please fill out all fields!");
       return;
     }
     
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    console.log("Canvas ref:", canvas);
+    if (!canvas) {
+      console.error("Canvas not found!");
+      return;
+    }
     
     const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    console.log("Canvas context:", ctx);
+    if (!ctx) {
+      console.error("Canvas context not found!");
+      return;
+    }
 
     // Set canvas size explicitly
     canvas.width = 800;
     canvas.height = 600;
+    console.log("Canvas size set to:", canvas.width, "x", canvas.height);
 
     // Clear canvas first
     ctx.clearRect(0, 0, 800, 600);
@@ -160,11 +171,19 @@ export default function Contact() {
 
   const downloadMeme = () => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    console.log("Download called, canvas:", canvas);
+    if (!canvas) {
+      console.error("No canvas for download!");
+      return;
+    }
+    
+    const dataURL = canvas.toDataURL('image/png');
+    console.log("Canvas data URL length:", dataURL.length);
+    console.log("Canvas data URL preview:", dataURL.substring(0, 100));
     
     const link = document.createElement('a');
     link.download = `nsense-feedback-${formData.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.png`;
-    link.href = canvas.toDataURL();
+    link.href = dataURL;
     link.click();
   };
 
@@ -285,7 +304,9 @@ export default function Contact() {
               <canvas
                 ref={canvasRef}
                 className="border border-quantum-cyan rounded-lg max-w-full h-auto"
-                style={{ maxHeight: '70vh' }}
+                style={{ maxHeight: '70vh', display: 'block' }}
+                width={800}
+                height={600}
               />
             </div>
             
@@ -301,9 +322,6 @@ export default function Contact() {
           </div>
         </div>
       )}
-
-      {/* Hidden canvas for generation */}
-      <canvas ref={canvasRef} style={{ display: 'none' }} />
     </div>
   );
 }
