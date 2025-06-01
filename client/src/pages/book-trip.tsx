@@ -74,6 +74,39 @@ export default function BookTrip() {
     },
   ];
 
+  const redactedDestinations = [
+    {
+      era: "Ancient Egypt",
+      year: "17,420 BCE",
+      description: "Who built the pyramids? Egyptians? Aliens? Mexicans? How did they do it?",
+      duration: "7 days",
+      price: "Ψ42,000",
+      difficulty: "Easy",
+      highlights: ["Construction of the pyramids", "Heiroglyph Grafitti course", "Open mic night at the Sphinx"],
+      color: "quantum-cyan",
+    },
+    {
+      era: "Sniper's Perch & Pizza Party",
+      year: "1963",
+      description: "Comes with a complimentary sixth-floor window seat and a suspiciously pre-heated pizza.",
+      duration: "3 days",
+      price: "Ψ12,000",
+      difficulty: "Mind-blowing",
+      highlights: ["Stop off at the Sniper Selfie Station for some memorabilia", "CIA 'No Comment' Tour - A workshop in plausible deniability", "Trajectory Theater, where the bullet is the protagonist"],
+      color: "quantum-magenta",
+    },
+    {
+      era: "New York",
+      year: "2001",
+      description: "Explore the event that launched a thousand forums. Nanosteel™ Hard-Hat included.",
+      duration: "1 day",
+      price: "Ψ25,000",
+      difficulty: "Extreme",
+      highlights: ["Steel beam density testing station", "Flight 93 VR re-enactment", "Dick Cheney themed escape room"],
+      color: "quantum-green",
+    },
+  ];
+
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
@@ -281,15 +314,15 @@ export default function BookTrip() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-magenta">Choose Your Destination</span>
+              <span className="text-quantum-magenta">The Redacted Chapters</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              Select from our curated collection of historically significant time periods
+              Declassified. Debauched. Dangerous without protection
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {destinations.map((destination, index) => (
+            {redactedDestinations.map((destination, index) => (
               <motion.div
                 key={destination.era + '-3'}
                 initial={{ opacity: 0, y: 30 }}
