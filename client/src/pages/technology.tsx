@@ -26,9 +26,9 @@ export default function Technology() {
     },
     {
       icon: Shield,
-      title: "Temporal Encryption",
-      description: "Immutable timeline storage with causality-resistant encryption for maximum historical integrity and minimal butterfly effects.",
-      features: ["Paradox-proof algorithms", "End-to-end chronological encryption", "Zero-knowledge temporal architecture"],
+      title: "Zero-Emission Recovery Encryption for Butterfly-Resilient Operations",
+      description: "An enterprise-grade encryption stack with zero flaws, zero leaks, and zero Grammy nominations.",
+      features: ["Paradox-Proof Hash Sequencing detects inconsistencies before they drop a diss track", "The Butterfly Firewall™ repels micro decisions with macro consequences", "Legacy-Free Timestamping - forget the past, encrypt the future, ignore the discography"],
       color: "neon-purple",
     },
   ];
