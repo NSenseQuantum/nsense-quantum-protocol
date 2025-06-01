@@ -12,9 +12,9 @@ export default function Technology() {
     },
     {
       icon: Brain,
-      title: "Paradox Prevention AI",
-      description: "Advanced neural networks trained on temporal mechanics to prevent customers from accidentally erasing themselves from existence.",
-      features: ["Grandfather Clause detection", "Timeline stability monitoring", "Existential crisis support"],
+      title: "Paradox Evasion & Probability Engine™",
+      description: "Completely and utterly necessarily over-engineered to catch causality hiccups before they croak your timeline.",
+      features: ["Causality sanitation core scrubs paradox residue from all bad (or drunken) decision trees", "Neural Ribbit-Harmony Layer keeps the AI calm by simulating peaceful swamp sounds", "Quantum Leap-Frogging Prevention ensures timeline jumps don't skip essential moments"],
       color: "quantum-magenta",
     },
     {
