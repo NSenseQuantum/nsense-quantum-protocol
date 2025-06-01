@@ -35,9 +35,12 @@ export default function Contact() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size
+    // Set canvas size explicitly
     canvas.width = 800;
     canvas.height = 600;
+
+    // Clear canvas first
+    ctx.clearRect(0, 0, 800, 600);
 
     // Create futuristic background
     const gradient = ctx.createLinearGradient(0, 0, 800, 600);
@@ -48,7 +51,7 @@ export default function Contact() {
     ctx.fillRect(0, 0, 800, 600);
 
     // Add grid pattern
-    ctx.strokeStyle = '#00ffff20';
+    ctx.strokeStyle = 'rgba(0, 255, 255, 0.2)';
     ctx.lineWidth = 1;
     for (let i = 0; i < 800; i += 40) {
       ctx.beginPath();
@@ -68,85 +71,90 @@ export default function Contact() {
     ctx.lineWidth = 3;
     ctx.strokeRect(10, 10, 780, 580);
 
-    // Header
+    // Header - use web safe fonts
     ctx.fillStyle = '#00ffff';
-    ctx.font = 'bold 32px Orbitron, monospace';
+    ctx.font = 'bold 28px Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('N-SENSE QUANTUM PROTOCOL', 400, 60);
     
     ctx.fillStyle = '#ff00ff';
-    ctx.font = 'bold 24px Orbitron, monospace';
+    ctx.font = 'bold 20px Arial, sans-serif';
     ctx.fillText('TEMPORAL FEEDBACK REPORT', 400, 90);
 
     // Form fields
     ctx.textAlign = 'left';
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 20px monospace';
+    ctx.font = 'bold 18px Arial, sans-serif';
     
     // Name
     ctx.fillText('TRAVELER ID:', 60, 150);
     ctx.fillStyle = '#00ff00';
-    ctx.font = '18px monospace';
+    ctx.font = '16px Arial, sans-serif';
     ctx.fillText(formData.name, 220, 150);
 
     // Trip
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 20px monospace';
+    ctx.font = 'bold 18px Arial, sans-serif';
     ctx.fillText('DESTINATION:', 60, 190);
     ctx.fillStyle = '#00ff00';
-    ctx.font = '18px monospace';
+    ctx.font = '16px Arial, sans-serif';
     ctx.fillText(formData.tripTaken, 220, 190);
 
     // Stars
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 20px monospace';
+    ctx.font = 'bold 18px Arial, sans-serif';
     ctx.fillText('QUANTUM RATING:', 60, 230);
     ctx.fillStyle = '#ffff00';
-    ctx.font = '24px monospace';
-    const stars = '★'.repeat(parseInt(formData.stars)) + '☆'.repeat(5 - parseInt(formData.stars));
+    ctx.font = '20px Arial, sans-serif';
+    const starCount = parseInt(formData.stars) || 0;
+    const stars = '★'.repeat(starCount) + '☆'.repeat(5 - starCount);
     ctx.fillText(stars, 260, 235);
 
     // Review box
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 20px monospace';
+    ctx.font = 'bold 18px Arial, sans-serif';
     ctx.fillText('TEMPORAL EXPERIENCE REPORT:', 60, 280);
     
     // Review text background
-    ctx.fillStyle = '#00001540';
+    ctx.fillStyle = 'rgba(0, 0, 21, 0.6)';
     ctx.fillRect(50, 300, 700, 200);
     ctx.strokeStyle = '#00ffff';
+    ctx.lineWidth = 2;
     ctx.strokeRect(50, 300, 700, 200);
 
-    // Review text
+    // Review text with proper word wrapping
     ctx.fillStyle = '#ffffff';
-    ctx.font = '16px monospace';
+    ctx.font = '14px Arial, sans-serif';
     const words = formData.review.split(' ');
     let line = '';
     let y = 330;
-    const maxWidth = 680;
+    const maxWidth = 660;
     
     for (let n = 0; n < words.length; n++) {
       const testLine = line + words[n] + ' ';
       const metrics = ctx.measureText(testLine);
       const testWidth = metrics.width;
       if (testWidth > maxWidth && n > 0) {
-        ctx.fillText(line, 70, y);
+        ctx.fillText(line.trim(), 70, y);
         line = words[n] + ' ';
-        y += 25;
+        y += 20;
         if (y > 480) break; // Don't overflow
       } else {
         line = testLine;
       }
     }
-    ctx.fillText(line, 70, y);
+    if (line.trim()) {
+      ctx.fillText(line.trim(), 70, y);
+    }
 
     // Footer
     ctx.fillStyle = '#ff00ff';
-    ctx.font = 'bold 16px monospace';
+    ctx.font = 'bold 14px Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('CLASSIFIED - FOR MEME USE ONLY', 400, 540);
     ctx.fillText('SHARE RESPONSIBLY ACROSS TIMELINES', 400, 560);
 
+    // Show the preview modal
     setShowPreview(true);
   };
 
