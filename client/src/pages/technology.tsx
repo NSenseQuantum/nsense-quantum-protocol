@@ -69,13 +69,15 @@ export default function Technology() {
       <section className="py-20 particle-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
-            className="text-5xl md:text-7xl font-orbitron font-black mb-6"
+            className="text-3xl md:text-5xl lg:text-6xl font-orbitron font-black mb-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-quantum-cyan">Quantum</span>{" "}
-            <span className="text-white">Technology</span>
+            <span className="text-quantum-cyan">Real-time Entangled</span>{" "}
+            <span className="text-white">Temporal Architecture</span>{" "}
+            <span className="text-quantum-magenta">for Reality Distortion</span>{" "}
+            <span className="text-white">and Interdimensional Operations</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-4xl mx-auto"
@@ -83,8 +85,7 @@ export default function Technology() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Powered by cutting-edge quantum computing and advanced temporal algorithms for unparalleled
-            performance in chronological displacement across multiple dimensions.
+            Engineered by visionaries, mad scientists, and Steve who once licked a particle accelerator.
           </motion.p>
         </div>
       </section>
