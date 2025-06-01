@@ -5,7 +5,7 @@ export default function Technology() {
   const technologies = [
     {
       icon: Cpu,
-      title: "Wibble Inversion Field",
+      title: "Metaphysical Overlap Optimizer and Dimensional ENGagement",
       description: "Trusted by quantum physicists, fictional time cops, and at least one viral Thai hippo.",
       features: ["AI-Slop proof algorithm safely absorbs excess wibble from your personal timeline", "Subatomic Mood Correction stabilises wormholes and prevents you calling your ex", "Prevents small space-time jitters from becoming medieval uprisings"],
       color: "quantum-cyan",
