@@ -101,7 +101,7 @@ export default function Contact() {
     ctx.fillStyle = '#00ffff';
     ctx.font = 'bold 28px Arial, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('N-SENSE QUANTUM PROTOCOL', 400, 60);
+    ctx.fillText('N-SENSE QUANTUM', 400, 60);
     
     ctx.fillStyle = '#ff00ff';
     ctx.font = 'bold 20px Arial, sans-serif';
@@ -129,7 +129,7 @@ export default function Contact() {
     // Stars
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 18px Arial, sans-serif';
-    ctx.fillText('QUANTUM RATING:', 60, 230);
+    ctx.fillText('RATING:', 60, 230);
     ctx.fillStyle = '#ffff00';
     ctx.font = '20px Arial, sans-serif';
     const starCount = parseInt(formData.stars) || 0;
@@ -177,7 +177,7 @@ export default function Contact() {
     ctx.fillStyle = '#ff00ff';
     ctx.font = 'bold 14px Arial, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('CLASSIFIED - FOR MEME USE ONLY', 400, 540);
+    ctx.fillText('CLASSIFIED', 400, 540);
     ctx.fillText('SHARE RESPONSIBLY ACROSS TIMELINES', 400, 560);
     
     console.log("Canvas drawing completed!");
