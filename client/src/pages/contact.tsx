@@ -212,8 +212,8 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-quantum-cyan neon-text">Feedback</span>{" "}
-            <span className="text-white">Meme Generator</span>
+            <span className="text-quantum-cyan">Feedback</span>{" "}
+            <span className="text-white">Generator</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-cool-gray max-w-4xl mx-auto"
@@ -289,10 +289,10 @@ export default function Contact() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button
                   onClick={generateMeme}
-                  className="w-full bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-space-dark py-3 font-semibold hover:shadow-lg hover:shadow-quantum-cyan/50 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-quantum-cyan to-quantum-magenta text-white py-3 font-semibold hover:shadow-lg hover:shadow-quantum-cyan/50 transition-all duration-300"
                 >
                   <Share2 className="mr-2" size={20} />
-                  Generate Feedback Meme
+                  Generate
                 </Button>
               </motion.div>
             </div>
