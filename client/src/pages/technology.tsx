@@ -34,10 +34,9 @@ export default function Technology() {
   ];
 
   const metrics = [
-    { label: "Temporal Jump Speed", value: "~1.4s", color: "quantum-cyan" },
-    { label: "Timeline Accuracy", value: "77.7%", color: "quantum-magenta" },
-    { label: "Daily Time Travels", value: "1M+", color: "quantum-green" },
-    { label: "Paradox Prevention", value: "0.992%", color: "neon-purple" },
+    { label: "Time Jump Speed", value: "10,000x leveraged", color: "quantum-cyan" },
+    { label: "Historical Accuracy", value: "Not Alot", color: "quantum-magenta" },
+    { label: "Timeline Coverage", value: "47(+11) Dimensions", color: "quantum-green" },
   ];
 
   const architecture = [
@@ -269,34 +268,34 @@ export default function Technology() {
               </div>
             </motion.div>
             <motion.div
-              className="glass-morphism rounded-2xl p-8 text-center"
+              className="glass-morphism rounded-2xl p-6 text-center"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <motion.div
-                className="w-32 h-32 bg-gradient-to-r from-quantum-cyan via-quantum-magenta to-quantum-green rounded-full mx-auto mb-6 flex items-center justify-center"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              >
-                <Rocket className="text-white text-4xl" />
-              </motion.div>
               <h3 className="text-2xl font-orbitron font-bold text-quantum-magenta mb-4">
                 Temporal Advantage
               </h3>
-              <div className="space-y-4">
+              <motion.div
+                className="w-20 h-20 bg-gradient-to-r from-quantum-cyan via-quantum-magenta to-quantum-green rounded-full mx-auto mb-6 flex items-center justify-center"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              >
+                <Rocket className="text-white text-2xl" />
+              </motion.div>
+              <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-cool-gray">Time Jump Speed</span>
-                  <span className="text-quantum-cyan font-bold">10,000x Faster</span>
+                  <span className="text-quantum-cyan font-bold">10,000x leveraged</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-cool-gray">Historical Accuracy</span>
-                  <span className="text-quantum-magenta font-bold">89.7% Verified</span>
+                  <span className="text-quantum-magenta font-bold">Not Alot</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-cool-gray">Timeline Coverage</span>
-                  <span className="text-quantum-green font-bold">47 Dimensions</span>
+                  <span className="text-quantum-green font-bold">47(+11) Dimensions</span>
                 </div>
               </div>
             </motion.div>
