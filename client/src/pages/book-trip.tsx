@@ -172,10 +172,10 @@ export default function BookTrip() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6">
-              <span className="text-quantum-magenta">Choose Your Destination</span>
+              <span className="text-quantum-magenta">Dank History Tours</span>
             </h2>
             <p className="text-xl text-cool-gray max-w-3xl mx-auto">
-              Select from our curated collection of historically significant time periods
+              History may be written by the victors, but memes are written by the bored, the chaotic and the chronically online.
             </p>
           </motion.div>
 
