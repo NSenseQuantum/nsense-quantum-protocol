@@ -5,9 +5,9 @@ export default function Technology() {
   const technologies = [
     {
       icon: Cpu,
-      title: "Quantum Temporal Engine",
-      description: "Harness quantum superposition for parallel timeline navigation across millions of temporal coordinates simultaneously.",
-      features: ["Multiverse computing", "Chronon entanglement", "10,000x faster time travel"],
+      title: "Wibble Inversion Field",
+      description: "Trusted by quantum physicists, fictional time cops, and at least one viral Thai hippo.",
+      features: ["AI-Slop proof algorithm safely absorbs excess wibble from your personal timeline", "Subatomic Mood Correction stabilises wormholes and prevents you calling your ex", "Prevents small space-time jitters from becoming medieval uprisings"],
       color: "quantum-cyan",
     },
     {
