@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     {
-      "src": "client/index.html",
+      "src": "client/**",
       "use": "@vercel/static",
       "config": {
-        "outputDirectory": "dist/"
+        "zeroConfig": true
       }
     },
     {
@@ -30,8 +30,11 @@
       "dest": "/server/index.ts"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/client/index.html"
+      "dest": "/index.html"
     }
   ]
 }

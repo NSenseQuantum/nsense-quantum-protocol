@@ -13,6 +13,16 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "quantum-cyan": "hsl(var(--quantum-cyan))",
+        "quantum-magenta": "hsl(var(--quantum-magenta))",
+        "quantum-green": "hsl(var(--quantum-green))",
+        "space-dark": "hsl(var(--space-dark))",
+        "navy-dark": "hsl(var(--navy-dark))",
+        "cool-gray": "hsl(var(--cool-gray))",
+        "light-cyan": "hsl(var(--light-cyan))",
+        "neon-orange": "hsl(var(--neon-orange))",
+        "neon-purple": "hsl(var(--neon-purple))",
+        "neon-amber": "hsl(var(--neon-amber))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

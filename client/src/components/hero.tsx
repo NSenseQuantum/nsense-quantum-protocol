@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Rocket, ChevronDown, X } from "lucide-react";
 import { QuantumVisualization } from "@/components/quantum-visualization";
 import { useState } from "react";
-import introVideo from "@assets/NSnse Trailer.mp4";
+import introVideo from "../../../attached_assets/NSnse Trailer.mp4";
 
 export function Hero() {
   const [showVideo, setShowVideo] = useState(false);
