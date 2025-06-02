@@ -8,9 +8,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import egyptVideo from "@assets/Egypt Trailer.mp4";
+import jfkVideo from "@assets/JFK Trailer.mp4";
 
 export default function BookTrip() {
   const [showEgyptVideo, setShowEgyptVideo] = useState(false);
+  const [showJfkVideo, setShowJfkVideo] = useState(false);
 
   const destinations = [
     {
@@ -33,6 +35,7 @@ export default function BookTrip() {
       difficulty: "Mind-blowing",
       highlights: ["Stop off at the Sniper Selfie Station for some memorabilia", "CIA 'No Comment' Tour - A workshop in plausible deniability", "Trajectory Theater, where the bullet is the protagonist"],
       color: "quantum-magenta",
+      hasVideo: true,
     },
     {
       era: "New York",
@@ -226,6 +229,8 @@ export default function BookTrip() {
                       onClick={() => {
                         if (destination.hasVideo && destination.era === "Ancient Egypt") {
                           setShowEgyptVideo(true);
+                        } else if (destination.hasVideo && destination.era === "Sniper's Perch & Pizza Party") {
+                          setShowJfkVideo(true);
                         }
                       }}
                     >
@@ -417,6 +422,39 @@ export default function BookTrip() {
                 autoPlay
                 className="w-full h-auto max-h-[80vh]"
                 onEnded={() => setShowEgyptVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* JFK Video Modal */}
+      {showJfkVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowJfkVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={jfkVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowJfkVideo(false)}
               >
                 Your browser does not support the video tag.
               </video>
