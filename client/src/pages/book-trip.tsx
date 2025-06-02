@@ -1,13 +1,17 @@
 import { motion } from "framer-motion";
-import { Calendar, Clock, MapPin, Users, Rocket, CreditCard } from "lucide-react";
+import { Calendar, Clock, MapPin, Users, Rocket, CreditCard, Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
+import egyptVideo from "@assets/Egypt Trailer.mp4";
 
 export default function BookTrip() {
+  const [showEgyptVideo, setShowEgyptVideo] = useState(false);
+
   const destinations = [
     {
       era: "Ancient Egypt",
@@ -18,6 +22,7 @@ export default function BookTrip() {
       difficulty: "Easy",
       highlights: ["Construction of the pyramids", "Heiroglyph Grafitti course", "Open mic night at the Sphinx"],
       color: "quantum-cyan",
+      hasVideo: true,
     },
     {
       era: "Sniper's Perch & Pizza Party",
@@ -216,7 +221,15 @@ export default function BookTrip() {
                       ))}
                     </div>
 
-                    <Button className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}>
+                    <Button 
+                      className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}
+                      onClick={() => {
+                        if (destination.hasVideo && destination.era === "Ancient Egypt") {
+                          setShowEgyptVideo(true);
+                        }
+                      }}
+                    >
+                      <Play className="mr-2" size={16} />
                       Trip Preview
                     </Button>
                   </CardContent>
@@ -379,6 +392,38 @@ export default function BookTrip() {
         </div>
       </section>
 
+      {/* Egypt Video Modal */}
+      {showEgyptVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowEgyptVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={egyptVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowEgyptVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
 
     </div>
   );
