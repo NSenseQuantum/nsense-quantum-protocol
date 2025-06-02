@@ -17,8 +17,19 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'client/index.html')
+      },
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+          if (id.includes('attached_assets')) {
+            return 'assets';
+          }
+        }
       }
-    }
+    },
+    chunkSizeWarningLimit: 1000
   },
   server: {
     proxy: {
