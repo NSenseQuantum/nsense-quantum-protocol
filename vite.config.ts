@@ -14,23 +14,9 @@ export default defineConfig({
   build: {
     outDir: '../dist/public',
     emptyOutDir: true,
-    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'client/index.html')
-      },
-      output: {
-        assetFileNames: (assetInfo) => {
-          if (!assetInfo.name) return 'assets/[name]-[hash][extname]';
-          const info = assetInfo.name.split('.');
-          const ext = info[info.length - 1];
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico|mp4/i.test(ext)) {
-            return `assets/[name]-[hash][extname]`;
-          }
-          return `assets/[name]-[hash][extname]`;
-        },
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js'
       }
     }
   },
