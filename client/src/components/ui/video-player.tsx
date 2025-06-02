@@ -29,10 +29,15 @@ export function VideoPlayer({ src, onClose, onEnded, autoPlay = true }: VideoPla
     video.addEventListener('loadeddata', handleLoadedData);
     video.addEventListener('error', handleError);
 
-    // Preload the video
-    video.preload = "auto";
+    // Start loading after a short delay to prioritize site content
+    const timer = setTimeout(() => {
+      video.preload = "auto";
+      // Trigger load if needed
+      video.load();
+    }, 2000); // 2 second delay
 
     return () => {
+      clearTimeout(timer);
       video.removeEventListener('loadstart', handleLoadStart);
       video.removeEventListener('loadeddata', handleLoadedData);
       video.removeEventListener('error', handleError);
@@ -66,6 +71,7 @@ export function VideoPlayer({ src, onClose, onEnded, autoPlay = true }: VideoPla
         className="w-full h-auto max-h-[80vh]"
         onEnded={onEnded}
         playsInline
+        preload="none" // Initial state before we trigger load in useEffect
       >
         Your browser does not support the video tag.
       </video>
