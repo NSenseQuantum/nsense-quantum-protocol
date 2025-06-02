@@ -12,6 +12,7 @@ import jfkVideo from "@assets/JFK Trailer.mp4";
 import newYorkVideo from "@assets/New York trailer.mp4";
 import harambeVideo from "@assets/Harambe Trailer.mp4";
 import moodengVideo from "@assets/Moodeng Trailer.mp4";
+import pedobearVideo from "@assets/Pedobear Trailer.mp4";
 
 export default function BookTrip() {
   const [showEgyptVideo, setShowEgyptVideo] = useState(false);
@@ -19,6 +20,7 @@ export default function BookTrip() {
   const [showNewYorkVideo, setShowNewYorkVideo] = useState(false);
   const [showHarambeVideo, setShowHarambeVideo] = useState(false);
   const [showMoodengVideo, setShowMoodengVideo] = useState(false);
+  const [showPedobearVideo, setShowPedobearVideo] = useState(false);
 
   const destinations = [
     {
@@ -88,6 +90,7 @@ export default function BookTrip() {
       difficulty: "Extreme",
       highlights: ["Take part in an engaging debate on the nature of internet crimes", "Build-A-Bear workshop (bears must be built with protection)", "Emotional support Capri Sun booth if the testimonies get too much to bear"],
       color: "quantum-green",
+      hasVideo: true,
     },
   ];
 
@@ -328,6 +331,8 @@ export default function BookTrip() {
                           setShowHarambeVideo(true);
                         } else if (destination.hasVideo && destination.era === "The Birth of Moodeng") {
                           setShowMoodengVideo(true);
+                        } else if (destination.hasVideo && destination.era === "Pedobear Tribunal") {
+                          setShowPedobearVideo(true);
                         }
                       }}
                     >
@@ -575,6 +580,39 @@ export default function BookTrip() {
                 autoPlay
                 className="w-full h-auto max-h-[80vh]"
                 onEnded={() => setShowMoodengVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Pedobear Video Modal */}
+      {showPedobearVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowPedobearVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={pedobearVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowPedobearVideo(false)}
               >
                 Your browser does not support the video tag.
               </video>
