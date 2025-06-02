@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Play, Rocket, ChevronDown } from "lucide-react";
+import { Play, Rocket, ChevronDown, X } from "lucide-react";
 import { QuantumVisualization } from "@/components/quantum-visualization";
+import { useState } from "react";
+import introVideo from "@assets/NSnse Trailer.mp4";
 
 export function Hero() {
+  const [showVideo, setShowVideo] = useState(false);
+  
   const stats = [
     { value: "100B+", label: "Years Travelled" },
     { value: "69%", label: "Survival Rate" },
@@ -114,6 +118,7 @@ export function Hero() {
             <Button
               variant="outline"
               className="border-2 border-quantum-magenta text-quantum-magenta px-8 py-4 text-lg font-bold hover:bg-quantum-magenta hover:text-space-dark transition-all duration-300"
+              onClick={() => setShowVideo(true)}
             >
               <Play className="mr-2" size={20} />
               Introductory Video
@@ -159,6 +164,39 @@ export function Hero() {
       >
         <ChevronDown className="text-quantum-cyan text-2xl" />
       </motion.div>
+
+      {/* Video Modal */}
+      {showVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={introVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }
