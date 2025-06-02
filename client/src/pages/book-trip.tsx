@@ -13,6 +13,7 @@ import newYorkVideo from "@assets/New York trailer.mp4";
 import harambeVideo from "@assets/Harambe Trailer.mp4";
 import moodengVideo from "@assets/Moodeng Trailer.mp4";
 import pedobearVideo from "@assets/Pedobear Trailer.mp4";
+import genghisVideo from "@assets/Genghis Trailer.mp4";
 
 export default function BookTrip() {
   const [showEgyptVideo, setShowEgyptVideo] = useState(false);
@@ -21,6 +22,7 @@ export default function BookTrip() {
   const [showHarambeVideo, setShowHarambeVideo] = useState(false);
   const [showMoodengVideo, setShowMoodengVideo] = useState(false);
   const [showPedobearVideo, setShowPedobearVideo] = useState(false);
+  const [showGenghisVideo, setShowGenghisVideo] = useState(false);
 
   const destinations = [
     {
@@ -104,6 +106,7 @@ export default function BookTrip() {
       difficulty: "Exhausting",
       highlights: ["Learn the tricks of polygamy from Genghis Khan himself", "Participate in numerous games of 'Yurt or Dare'", "Steppe-Daddy Training"],
       color: "quantum-cyan",
+      hasVideo: true,
     },
     {
       era: "Cleopatra's Private Zoo",
@@ -412,7 +415,15 @@ export default function BookTrip() {
                       ))}
                     </div>
 
-                    <Button className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}>
+                    <Button 
+                      className={`w-full bg-gradient-to-r from-${destination.color} to-purple-500 hover:shadow-lg transition-all duration-300`}
+                      onClick={() => {
+                        if (destination.hasVideo && destination.era === "Hung like a Horse") {
+                          setShowGenghisVideo(true);
+                        }
+                      }}
+                    >
+                      {destination.hasVideo ? <Play className="mr-2" size={16} /> : null}
                       Trip Preview
                     </Button>
                   </CardContent>
@@ -613,6 +624,39 @@ export default function BookTrip() {
                 autoPlay
                 className="w-full h-auto max-h-[80vh]"
                 onEnded={() => setShowPedobearVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Genghis Video Modal */}
+      {showGenghisVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowGenghisVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={genghisVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowGenghisVideo(false)}
               >
                 Your browser does not support the video tag.
               </video>
