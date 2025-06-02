@@ -19,7 +19,7 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center relative particle-bg pt-20">
       {/* Quantum Visualizations */}
       <motion.div
-        className="absolute top-20 left-10 opacity-60"
+        className="absolute top-20 left-10 opacity-60 pointer-events-none"
         animate={{
           y: [0, -20, 0],
         }}
@@ -33,7 +33,7 @@ export function Hero() {
       </motion.div>
       
       <motion.div
-        className="absolute top-40 right-20 opacity-50"
+        className="absolute top-40 right-20 opacity-50 pointer-events-none"
         animate={{
           y: [0, -15, 0],
         }}
@@ -48,7 +48,7 @@ export function Hero() {
       </motion.div>
       
       <motion.div
-        className="absolute bottom-40 left-20 opacity-40"
+        className="absolute bottom-40 left-20 opacity-40 pointer-events-none"
         animate={{
           y: [0, -25, 0],
         }}
@@ -64,7 +64,7 @@ export function Hero() {
 
       {/* Central large quantum visualization */}
       <motion.div
-        className="absolute top-1/2 right-10 transform -translate-y-1/2 opacity-30"
+        className="absolute top-1/2 right-10 transform -translate-y-1/2 opacity-30 pointer-events-none"
         animate={{
           y: [0, -30, 0],
           x: [0, 10, 0],
@@ -78,7 +78,7 @@ export function Hero() {
         <QuantumVisualization variant="helix" size="large" />
       </motion.div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -114,16 +114,14 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button
-              variant="outline"
-              className="border-2 border-quantum-magenta text-quantum-magenta px-8 py-4 text-lg font-bold hover:bg-quantum-magenta hover:text-space-dark transition-all duration-300"
-              onClick={() => setShowVideo(true)}
-            >
-              <Play className="mr-2" size={20} />
-              Introductory Video
-            </Button>
-          </motion.div>
+          <Button
+            variant="outline"
+            className="border-2 border-quantum-magenta text-quantum-magenta px-8 py-4 text-lg font-bold hover:bg-quantum-magenta hover:text-space-dark transition-all duration-300"
+            onClick={() => setShowVideo(true)}
+          >
+            <Play className="mr-2" size={20} />
+            Introductory Video
+          </Button>
         </motion.div>
 
         {/* Hero Stats */}
