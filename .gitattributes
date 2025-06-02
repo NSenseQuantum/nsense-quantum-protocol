@@ -1,2 +1,15 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 attached_assets/*.mp4 filter=lfs diff=lfs merge=lfs -text 
+attached_assets/Cleopatra filter=lfs diff=lfs merge=lfs -text
+Trailer.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/Genghis filter=lfs diff=lfs merge=lfs -text
+attached_assets/Harambe filter=lfs diff=lfs merge=lfs -text
+attached_assets/Moodeng filter=lfs diff=lfs merge=lfs -text
+attached_assets/JFK filter=lfs diff=lfs merge=lfs -text
+attached_assets/NSnse filter=lfs diff=lfs merge=lfs -text
+attached_assets/Pedobear filter=lfs diff=lfs merge=lfs -text
+attached_assets/Egypt filter=lfs diff=lfs merge=lfs -text
+attached_assets/Kamasutra filter=lfs diff=lfs merge=lfs -text
+attached_assets/New filter=lfs diff=lfs merge=lfs -text
+York filter=lfs diff=lfs merge=lfs -text
+trailer.mp4 filter=lfs diff=lfs merge=lfs -text
