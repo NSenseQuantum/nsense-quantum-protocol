@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "framework": "vite",
   "builds": [
     {
       "src": "package.json",
@@ -20,4 +21,4 @@
       "dest": "/index.html"
     }
   ]
-} 
+}
