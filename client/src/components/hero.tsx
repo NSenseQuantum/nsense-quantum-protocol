@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Play, Rocket, ChevronDown, X } from "lucide-react";
 import { QuantumVisualization } from "@/components/quantum-visualization";
+import { VideoPlayer } from "@/components/ui/video-player";
 import { useState } from "react";
 import introVideo from "../../../attached_assets/NSnse Trailer.mp4";
 
@@ -180,18 +181,11 @@ export function Hero() {
               <X size={32} />
             </button>
             
-            {/* Video container */}
-            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
-              <video
-                src={introVideo}
-                controls
-                autoPlay
-                className="w-full h-auto max-h-[80vh]"
-                onEnded={() => setShowVideo(false)}
-              >
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <VideoPlayer
+              src={introVideo}
+              onEnded={() => setShowVideo(false)}
+              onClose={() => setShowVideo(false)}
+            />
           </motion.div>
         </div>
       )}
