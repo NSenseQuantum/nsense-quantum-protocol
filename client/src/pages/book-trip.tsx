@@ -15,6 +15,7 @@ import moodengVideo from "@assets/Moodeng Trailer.mp4";
 import pedobearVideo from "@assets/Pedobear Trailer.mp4";
 import genghisVideo from "@assets/Genghis Trailer.mp4";
 import cleopatraVideo from "@assets/Cleopatra Trailer.mp4";
+import kamasutraVideo from "@assets/Kamasutra Trailer.mp4";
 
 export default function BookTrip() {
   const [showEgyptVideo, setShowEgyptVideo] = useState(false);
@@ -25,6 +26,7 @@ export default function BookTrip() {
   const [showPedobearVideo, setShowPedobearVideo] = useState(false);
   const [showGenghisVideo, setShowGenghisVideo] = useState(false);
   const [showCleopatraVideo, setShowCleopatraVideo] = useState(false);
+  const [showKamasutraVideo, setShowKamasutraVideo] = useState(false);
 
   const destinations = [
     {
@@ -130,6 +132,7 @@ export default function BookTrip() {
       difficulty: "Extreme",
       highlights: ["Luxury camel caravan with non-consensual cuddling zones", "Silk Rope Twister™", "Access to the Sensual Scrolls library - now with VR booths and annotated diagrams"],
       color: "quantum-green",
+      hasVideo: true,
     },
   ];
 
@@ -425,6 +428,8 @@ export default function BookTrip() {
                           setShowGenghisVideo(true);
                         } else if (destination.hasVideo && destination.era === "Cleopatra's Private Zoo") {
                           setShowCleopatraVideo(true);
+                        } else if (destination.hasVideo && destination.era === "The Kamasutra Caravan") {
+                          setShowKamasutraVideo(true);
                         }
                       }}
                     >
@@ -695,6 +700,39 @@ export default function BookTrip() {
                 autoPlay
                 className="w-full h-auto max-h-[80vh]"
                 onEnded={() => setShowCleopatraVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Kamasutra Video Modal */}
+      {showKamasutraVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowKamasutraVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={kamasutraVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowKamasutraVideo(false)}
               >
                 Your browser does not support the video tag.
               </video>
