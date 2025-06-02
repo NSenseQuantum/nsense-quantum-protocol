@@ -14,6 +14,7 @@ import harambeVideo from "@assets/Harambe Trailer.mp4";
 import moodengVideo from "@assets/Moodeng Trailer.mp4";
 import pedobearVideo from "@assets/Pedobear Trailer.mp4";
 import genghisVideo from "@assets/Genghis Trailer.mp4";
+import cleopatraVideo from "@assets/Cleopatra Trailer.mp4";
 
 export default function BookTrip() {
   const [showEgyptVideo, setShowEgyptVideo] = useState(false);
@@ -23,6 +24,7 @@ export default function BookTrip() {
   const [showMoodengVideo, setShowMoodengVideo] = useState(false);
   const [showPedobearVideo, setShowPedobearVideo] = useState(false);
   const [showGenghisVideo, setShowGenghisVideo] = useState(false);
+  const [showCleopatraVideo, setShowCleopatraVideo] = useState(false);
 
   const destinations = [
     {
@@ -117,6 +119,7 @@ export default function BookTrip() {
       difficulty: "Medium",
       highlights: ["Private snake charming.. (without the snake)", "Anubis after Dark the musical", "Some animals may be women. Some women may be animals. Some animals may be animals. It's complicated."],
       color: "quantum-magenta",
+      hasVideo: true,
     },
     {
       era: "The Kamasutra Caravan",
@@ -420,6 +423,8 @@ export default function BookTrip() {
                       onClick={() => {
                         if (destination.hasVideo && destination.era === "Hung like a Horse") {
                           setShowGenghisVideo(true);
+                        } else if (destination.hasVideo && destination.era === "Cleopatra's Private Zoo") {
+                          setShowCleopatraVideo(true);
                         }
                       }}
                     >
@@ -657,6 +662,39 @@ export default function BookTrip() {
                 autoPlay
                 className="w-full h-auto max-h-[80vh]"
                 onEnded={() => setShowGenghisVideo(false)}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Cleopatra Video Modal */}
+      {showCleopatraVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <motion.div
+            className="relative w-full max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setShowCleopatraVideo(false)}
+              className="absolute -top-12 right-0 text-white hover:text-quantum-cyan transition-colors z-10"
+            >
+              <X size={32} />
+            </button>
+            
+            {/* Video container */}
+            <div className="relative bg-space-dark rounded-lg overflow-hidden border border-quantum-cyan/30">
+              <video
+                src={cleopatraVideo}
+                controls
+                autoPlay
+                className="w-full h-auto max-h-[80vh]"
+                onEnded={() => setShowCleopatraVideo(false)}
               >
                 Your browser does not support the video tag.
               </video>
