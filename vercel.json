@@ -1,40 +1,36 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "builds": [
     {
-      "src": "client/**",
-      "use": "@vercel/static",
-      "config": {
-        "zeroConfig": true
-      }
+      "src": "dist/public/**",
+      "use": "@vercel/static"
     },
     {
-      "src": "server/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "server/**",
-          "shared/**"
-        ],
-        "excludeFiles": [
-          "attached_assets/**",
-          "client/**",
-          "node_modules/**"
-        ]
-      }
+      "src": "dist/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/server/index.ts"
+      "dest": "/dist/index.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/public/assets/$1"
+    },
+    {
+      "src": "/favicon.svg",
+      "dest": "/dist/public/favicon.svg"
     },
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/public/index.html"
     }
   ]
 }
