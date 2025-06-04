@@ -65,9 +65,12 @@ export function Footer() {
             <p className="text-cool-gray text-sm max-w-xs mx-auto">
               Revolutionizing temporal displacement with quantum-powered chronology for time travelers across all dimensions.
             </p>
+            <p className="text-cool-gray text-xs max-w-xs mx-auto opacity-50">
+              CA: vS66MtCwG3j2MfipLaYEW2JbJsEB73D3nnZpSZkpump
+            </p>
             <div className="flex justify-center space-x-4">
               <motion.a
-                href="https://x.com/NSNSEQuantum"
+                href="https://x.com/NSENSEQUANTUM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cool-gray hover:text-quantum-cyan transition-colors"
